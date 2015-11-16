@@ -1015,9 +1015,6 @@ ul.job_listings li.job_listing a {
     opacity:0.5;
     z-index: 99;
 }
-.entertainer-title{
-    z-index:100;
-}
 #buddypress #members-list li:hover .member-filter{
     opacity: 0.8;
     background-color:black;
@@ -1080,6 +1077,7 @@ z-index:100!important;
     color:white!important;
     font-weight:600;
     z-index:100 !important;
+
 }
 
 
@@ -1470,6 +1468,7 @@ body.members.layout-full #colophon #footer-widgets {
     bottom: 0px;
     color: #FFF;
     width:100%;
+    z-index: 100 !important;
 }
 
 .brukernavnmeldemsiden a {
