@@ -1015,6 +1015,7 @@ ul.job_listings li.job_listing a {
     left: 0;
     bottom: 0;
     right: 0;
+    z-index:99;
 }
 #members-list li .musikertype {
 
