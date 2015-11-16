@@ -1049,6 +1049,7 @@ z-index:100!important;
 
 #buddypress #members-list li:hover #members-list li .musikertype{
     opacity:1;
+    z-index:100;
 }
 
 #members-list li .item-avatar img {
