@@ -47,6 +47,7 @@ do_action('bp_before_profile_loop_content'); ?>
                     prorevs_add_star_loop(1);
                     prorevs_add_star_loop_content();
                     prorevs_add_star_loop($profilID);
+                    echo do_shortcode("[prorevs_users_by_rating limit=10])");
                     ?>
                 <h4><?php bp_the_profile_group_name(); ?></h4>
 
