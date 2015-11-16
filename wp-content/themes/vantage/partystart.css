@@ -1010,21 +1010,7 @@ ul.job_listings li.job_listing a {
     transition: ease all 300ms;
 }
 #buddypress #members-list li:hover .member-filter{
-    background-image: -webkit-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1));
-    background-image: -moz-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1));
-    background-image: -o-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1));
-    background-image: -ms-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1));
-    /* background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6)); */
-    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#00000000', endColorstr='#99000000');
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index:99;
-    -webkit-transition: ease all 300ms;
-    -moz-transition: ease all 300ms;
-    transition: ease all 300ms;
+opacity: 1;
 }
 #members-list li .musikertype {
 z-index:100!important;
