@@ -42,9 +42,6 @@ do_action('bp_before_profile_loop_content'); ?>
             ?>
 
             <div id="profilInformasjonsFelter" class="bp-widget <?php bp_the_profile_group_slug(); ?>">
-
-                <h4><?php bp_the_profile_group_name(); ?></h4>
-
                 <table class="profile-fields">
                     <div class="col-md-12">
                         <?php //regne ut ikon til type artist
@@ -107,6 +104,9 @@ do_action('bp_before_profile_loop_content'); ?>
 
                         ?>
                     </div>
+                <h4><?php bp_the_profile_group_name(); ?></h4>
+
+
                     <?php /*while (bp_profile_fields()) : bp_the_profile_field(); ?>
 
                         <?php if (bp_field_has_data()) : ?>
