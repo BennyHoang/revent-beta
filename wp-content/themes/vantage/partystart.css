@@ -1060,7 +1060,7 @@ z-index:100!important;
     text-shadow:none;
 }
 #buddypress #members-list li:hover .utvalg-sendforesporsel{
-    top:-78;
+    top:-78px;
     opacity:1;
 }
 #buddypress #members-list li:hover .musikertype{
