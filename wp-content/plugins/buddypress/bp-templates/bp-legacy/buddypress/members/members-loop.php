@@ -136,7 +136,7 @@ do_action( 'bp_before_directory_members_list' ); ?>
 						echo $sattKategori; ?></span>
 						</div>
 						<?php
-						$profil = "lol";
+						$profil = bp_core_get_username($user_id);
 						$profilID = $user_id;
 						echo'<a class="utvalg-sendforesporsel" href="../foresporsel/?direkte=' . $profil . '&did='.$profilID.'">SEND FORESP&Oslash;RSEL</a>';
 
