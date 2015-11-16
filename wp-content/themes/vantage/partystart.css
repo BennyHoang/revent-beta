@@ -1011,6 +1011,7 @@ ul.job_listings li.job_listing a {
 }
 #buddypress #members-list li:hover .member-filter{
 opacity: 1;
+    z-index:99;
 }
 #members-list li .musikertype {
 z-index:100!important;
