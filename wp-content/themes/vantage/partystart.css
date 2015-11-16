@@ -1047,7 +1047,7 @@ z-index:100!important;
     transition: all 300ms;
 }
 
-#buddypress #members-list li:hover #members-list li .musikertype{
+#buddypress #members-list li:hover .musikertype{
     opacity:1;
     z-index:100;
 }
