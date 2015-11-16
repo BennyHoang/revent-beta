@@ -80,7 +80,10 @@ do_action( 'bp_before_directory_members_list' ); ?>
             */
 
 			if ( $user->roles[0] == 'subscriber' ){ ?>
-				<li <?php bp_member_class(); ?>>
+				<li <?php bp_member_class();
+				$user_id = bp_get_member_user_id();
+
+				?>>
 					<div class="member-filter"></div>
 					<div class="item-avatar">
 						<a href="<?php bp_member_permalink(); ?>"><?php bp_member_avatar('type=full&width=100%&height=180'); ?></a>
