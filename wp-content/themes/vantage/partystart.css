@@ -994,10 +994,10 @@ ul.job_listings li.job_listing a {
     /* -webkit-border-top-right-radius: 5px; */
     /* border-top-right-radius: 5px; */
     /* background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(0,0,0,0)), color-stop(100%, rgba(0,0,0,0.6))); */
-    background-image: -webkit-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6));
-    background-image: -moz-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6));
-    background-image: -o-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6));
-    background-image: -ms-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6));
+    background-image: -webkit-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5));
+    background-image: -moz-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5));
+    background-image: -o-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5));
+    background-image: -ms-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5));
     /* background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.6)); */
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#00000000', endColorstr='#99000000');
     position: absolute;
