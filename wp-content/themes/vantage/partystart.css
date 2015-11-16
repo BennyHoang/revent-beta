@@ -1007,6 +1007,7 @@ ul.job_listings li.job_listing a {
     right: 0;
 }
 #buddypress #members-list li:hover .member-filter{
+    width:1000px;
     background-color:blue;
 }
 #members-list li .musikertype {
