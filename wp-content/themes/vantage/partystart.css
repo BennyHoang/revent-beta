@@ -1006,6 +1006,9 @@ ul.job_listings li.job_listing a {
     bottom: 0;
     right: 0;
 }
+#buddypress #members-list li:hover .member-filter{
+    background-color:blue;
+}
 #members-list li .musikertype {
 
     width: 40px;
@@ -1471,9 +1474,7 @@ body.members.layout-full #colophon #footer-widgets {
     -moz-transition: all 300ms;
     transition: all 300ms;
 }
-#buddypress #members-list li:hover .member-filter{
-background-color:blue;
-}
+
 #buddypress #members-list li:hover {
     -webkit-transition: all 300ms;
     -moz-transition: all 300ms;
