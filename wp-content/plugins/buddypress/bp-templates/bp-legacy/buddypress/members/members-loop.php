@@ -81,9 +81,6 @@ do_action( 'bp_before_directory_members_list' ); ?>
 
 			if ( $user->roles[0] == 'subscriber' ){ ?>
 				<li <?php bp_member_class(); ?>>
-					<div class="item-avatar">
-						<a href="<?php bp_member_permalink(); ?>"><?php bp_member_avatar('type=full&width=100%&height=180'); ?></a>
-					</div>ssssss
 					<div class="item-title brukernavnmeldemsiden">
 						<?php
 						//regne ut ikon til type artist
@@ -155,6 +152,10 @@ do_action( 'bp_before_directory_members_list' ); ?>
 
 						<a class="<?php echo$MaxOrdklasse; ?>" href="<?php bp_member_permalink(); ?>"><?php echo $artistNavnPrintes  ?></a>
 					</div>
+					<div class="item-avatar">
+						<a href="<?php bp_member_permalink(); ?>"><?php bp_member_avatar('type=full&width=100%&height=180'); ?></a>
+					</div>
+
 					<div class="item">
 
 						<div class="item-title ">
