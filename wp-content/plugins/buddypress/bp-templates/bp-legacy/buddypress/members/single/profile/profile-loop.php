@@ -44,7 +44,7 @@ do_action('bp_before_profile_loop_content'); ?>
             <div id="profilInformasjonsFelter" class="bp-widget <?php bp_the_profile_group_slug(); ?>">
                 <span class="data"><?php echo 'Her er stjernene '. bp_get_member_profile_data('field=rating-top') ?></span>
                     <?php
-                    prorevs_add_star_loop();
+                    prorevs_add_star_loop(1);
 
                     ?>
                 <h4><?php bp_the_profile_group_name(); ?></h4>
