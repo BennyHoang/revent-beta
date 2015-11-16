@@ -1012,7 +1012,7 @@ ul.job_listings li.job_listing a {
     -webkit-transition: ease all 300ms;
     -moz-transition: ease all 300ms;
     transition: ease all 300ms;
-    opacity:0.5;
+    opacity:0.6;
     z-index: 99;
     background-color:black
 }
