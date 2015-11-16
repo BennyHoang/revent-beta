@@ -1012,9 +1012,9 @@ ul.job_listings li.job_listing a {
     -webkit-transition: ease all 300ms;
     -moz-transition: ease all 300ms;
     transition: ease all 300ms;
-    opacity:1;
+    opacity:0.5;
     z-index: 99;
-    background-color:rgba(20,20,20, 0.6);
+    background-color:black
 }
 #buddypress #members-list li:hover .member-filter{
     opacity: 0.8;
