@@ -139,7 +139,7 @@ do_action( 'bp_before_directory_members_list' ); ?>
 $profil = "lol";
 $profilID = $user_id;
 						echo'<a  href="../news/foresporsel/?direkte=' . $profil . '&did='.$profilID.'"><button class="utvalg-sendforesporsel">SEND FORESP&Oslash;RSEL</button></a>';
-
+ 
 ?>
 						<?php
 						$navnArtist = bp_get_member_name();
