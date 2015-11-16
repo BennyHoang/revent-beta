@@ -1577,14 +1577,6 @@ body.members.layout-full #colophon #footer-widgets {
     display: none;
 }
 
-#buddypress #members-dir-list ul.item-list li div.item-title {
-    font-size: 120% !important;
-    position: absolute !important;
-    bottom: 0px;
-    color: #FFF;
-    background: #f4f4f4;
-}
-
 
 #buddypress #members-dir-list ul.item-list li div.item-meta {
     text-transform: uppercase;
