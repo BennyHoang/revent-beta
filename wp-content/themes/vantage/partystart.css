@@ -1062,7 +1062,6 @@ z-index:100!important;
 .utvalg-sendforesporsel:hover{
     background:white!important;
     color:black!important;
-    border:2px solid white !important;
 }
 #buddypress #members-list li:hover .utvalg-sendforesporsel{
     top:-78px;
