@@ -1014,7 +1014,6 @@ ul.job_listings li.job_listing a {
     transition: ease all 300ms;
     opacity:0.5;
     z-index: 99;
-    background-color:black
 }
 #buddypress #members-list li:hover .member-filter{
     opacity: 0.8;
