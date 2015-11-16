@@ -132,7 +132,12 @@ do_action( 'bp_before_directory_members_list' ); ?>
 
 						echo $sattKategori; ?></span>
 						</div>
-						<button class="utvalg-sendforesporsel">Send Forespørsel</button>
+<?php
+$profil = get_user_name($user);
+$profilID = $user;
+						echo'<a  href="../../foresporsel/?direkte=' . $profil . '&did='.$profilID.'"><button class="utvalg-sendforesporsel">SEND FORESP&Oslash;RSEL</button></a>';
+
+?>
 						<?php
 						$navnArtist = bp_get_member_name();
 						//echo $navnArtist;
