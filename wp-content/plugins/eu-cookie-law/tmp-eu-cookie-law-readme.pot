@@ -1,0 +1,622 @@
+msgid ""
+msgstr "MIME-Version: 1.0\n"
+
+#. Name.
+msgid "EU Cookie Law"
+msgstr ""
+
+#. Short description.
+msgid "EU Cookie Law informs users that your site uses cookies, with option to lock scripts before consent. Light + Customizable style."
+msgstr ""
+
+#. Screenshot description.
+msgid "Banner example - <a href=\"http://www.icscarpa.gov.it\">www.icscarpa.it</a>"
+msgstr ""
+
+#. Screenshot description.
+msgid "Autoblock feature (no consent) - <a href=\"http://www.comune.carassai.ap.it\">www.comune.carassai.ap.it</a>"
+msgstr ""
+
+#. Screenshot description.
+msgid "Autoblock feature (no consent) - <a href=\"http://www.sanpellegrinoterme.gov.it\">www.sanpellegrinoterme.gov.it</a>"
+msgstr ""
+
+#. Screenshot description.
+msgid "Autoblock feature (cookies accepted) - <a href=\"http://www.sanpellegrinoterme.gov.it\">www.sanpellegrinoterme.gov.it</a>"
+msgstr ""
+
+#. Screenshot description.
+msgid "Banner example"
+msgstr ""
+
+#. Screenshot description.
+msgid "Autoblock feature (iframe, embed, Google Maps, Disqus,...)"
+msgstr ""
+
+#. Screenshot description.
+msgid "<code>[cookie-control]</code> shortcode"
+msgstr ""
+
+#. Screenshot description.
+msgid "Options screen"
+msgstr ""
+
+#. Screenshot description.
+msgid "Fully customizable"
+msgstr ""
+
+#. Found in description header.
+msgid "Features"
+msgstr ""
+
+#. Found in description header.
+msgid "Advanced Features"
+msgstr ""
+
+#. Found in description header.
+msgid "Cookie block"
+msgstr ""
+
+#. Found in description header.
+msgid "Included Languages"
+msgstr ""
+
+#. Found in description header.
+msgid "Contributions"
+msgstr ""
+
+#. Found in description list item.
+msgid "<strong>Customizable banner</strong> (color, position, strings)"
+msgstr ""
+
+#. Found in description list item.
+msgid "Consent by <strong>Clicking, Scrolling and Navigation</strong>"
+msgstr ""
+
+#. Found in description list item.
+msgid "Set your page, popup or custom URL for Cookie Policy"
+msgstr ""
+
+#. Found in description list item.
+msgid "Set cookie expiry"
+msgstr ""
+
+#. Found in description list item.
+msgid "Fully <strong>responsive</strong> for tablets and smartphones"
+msgstr ""
+
+#. Found in description list item.
+msgid "Compatible with <strong>mobile</strong> themes and plugins "
+msgstr ""
+
+#. Found in description list item.
+msgid "Compatible with <strong>multilanguage</strong> plugins"
+msgstr ""
+
+#. Found in description list item.
+msgid "Certified for <strong>WPML</strong>"
+msgstr ""
+
+#. Found in description list item.
+msgid "2-layer cookie prevention"
+msgstr ""
+
+#. Found in description list item.
+msgid "Shortcode to <strong>revoke cookie consent</strong>"
+msgstr ""
+
+#. Found in description list item.
+msgid "Shortcode to show a list of cookies"
+msgstr ""
+
+#. Found in description list item.
+msgid "Compatible with Disqus"
+msgstr ""
+
+#. Found in description list item.
+msgid "Block scripts if cookies are not accepted"
+msgstr ""
+
+#. Found in description list item.
+msgid "<strong>Automatic block of iframes, embeds, scripts and objects</strong>"
+msgstr ""
+
+#. Found in description list item.
+msgid "Complete set of developer Shortcodes and PHP Functions"
+msgstr ""
+
+#. Found in description list item.
+msgid "Manual and <strong>Automatic</strong> set width and height of blocked content"
+msgstr ""
+
+#. Found in description list item.
+msgid "English (default) "
+msgstr ""
+
+#. Found in description list item.
+msgid "Italian community <a href=\"http://www.porteapertesulweb.it\">Porte Aperte sul Web</a> for beta-testing and ideas."
+msgstr ""
+
+#. Found in description list item.
+msgid "This plugin was originally developed by <a href=\"http://peadig.com/wordpress-plugins/eu-cookie-law/\">Peadig</a>."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "EU Cookie Law is a <strong>light, elegant and powerful</strong> solution that allows your website to comply the european cookie law by informing users that your site has cookies, with a popup for more information and option to lock scripts before acceptance (as required by  <strong>Italian Law - Garante della Privacy</strong> dispositions)."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "You can customise the style to perfectly fit your website and you have many options to control cookies behaviour after and before acceptance."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "https://www.youtube.com/watch?v=6f2qxC3GZJ8"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Demo: <a href=\"http://www.sanpellegrinoterme.gov.it\">www.sanpellegrinoterme.gov.it</a>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "Simply install the plugin and follow the instructions on the Settings page."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "You can lock cookies using <code>[cookie]</code> and <code>[/cookie]</code> shortcodes in every post, page and widget. You can use php functions too:"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "<strong>More Shortcodes &amp; PHP Functions are available <a href=\"//wordpress.org/plugins/eu-cookie-law/faq/\">in our faqs</a>.</strong>"
+msgstr ""
+
+#. Found in description paragraph.
+msgid "EU Cookie Law started from <a href=\"http://peadig.com/wordpress-plugins/eu-cookie-law/\">Peadig</a> in 2012 and in june 2015 has became part of <a href=\"http://www.wpgov.it\">WPGov.it</a> that aims to give Italian Public Government powerful open source solutions for websites."
+msgstr ""
+
+#. Found in description paragraph.
+msgid "WordPress translations by: <a href=\"http://www.mister-mx.de\">Karsten Höfner</a> (de_DE), <a href=\"http://marcomilesi.ml\">Marco Milesi</a> (it_IT)"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Upload <code>eu-cookie-law</code> directory to the <code>/wp-content/plugins/</code> directory"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Activate the plugin through the 'Plugins' menu in WordPress"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Go to the EU Cookie settings page"
+msgstr ""
+
+#. Found in installation list item.
+msgid "Go through the steps and hit update!"
+msgstr ""
+
+#. Found in installation paragraph.
+msgid "This section describes how to install the plugin and get it working."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added <strong>Top Center</strong> and <strong>Bottom Center</strong> for banner position"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added **target=\"_blank\" option for cookie policy link"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removed <strong>ITALIAN</strong> and <strong>DEUTSCH</strong> languages. They are now bundled by WordPress. After some minutes you update to this version, you will get a notice to update translations in your dashboard. Other languages will come soon."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Minor changes"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Minor change for translate.wordpress.org translation system"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "jQuery fix - thanks @dukessa and @froussette"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "<strong>Added</strong> option to define custom URL for cookie page"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed bug in Firefox - Thanks @gandalfthegrey"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Polish - Thanks Mariusz Kołacz"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed some missing admin-side translations - Thanks Mariusz Kołacz"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Minor changes and performance improvements"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Catalan (ca) by <a href=\"http://cherrycreative.es\">Núria Nadal</a>"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed incompatibility with some plugins (eg. Ultimate Tag Cloud Widget)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improved performances"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed Cookie Control bugs in some servers"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed wrong domain when set cookie in some servers"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added German (de_DE) by <a href=\"http://www.mister-mx.de\">Karsten Höfner</a>"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Spanish (es_ES) by <a href=\"http://cherrycreative.es\">Núria Nadal</a>"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Better navigation consent"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed occasional bugs with \"headers already sent\""
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added <strong>cookie-list</strong> shortcode (usage in FAQS)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added allowed \"0\" value to cookie lenght (for SESSION)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improved cache compatibility"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added WPML instructions in FAQS"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added cookie-control shortcode strings for customization+translations"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removed refresh if autoBlock not enabled"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improved autoBlock"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "<strong>eucookielaw_exclude</strong> field now applies to content only"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Performance improvements"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improved translation system"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improved compatibility with WPML"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed some missing strings in admin panel"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added es_ES, fr_FR, de_DE translation files (blank)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Dutch (nl_NL) by <a href=\"http://gerardweijer.nl\">Gerard Weijer</a>"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added WP Super Cache tips in faqs (sperimental)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Revoke Consent Link in faqs"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improved faqs"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "New banner"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improved navigation consent (now it doesn't reload the page)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improved performance (load twice faster than 2.5.2)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added parameter to allow you to create links to revoke cookie consent (sperimental)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improved autoblock"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Compatible with <strong>WPML</strong>"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Better AutoBlock function (Disqus block included!)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Now scripts block doesn't generate the message (limited for iframe, object and embed)     "
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Minor changes         "
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removed acceptance on scroll while in cookie page"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Continue Navigation acceptance (beta)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added Multisite Support (beta)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed occasional wrong date when setting cookies"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Solved a conflict with \"Register Plus Redux\""
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added <code>&lt;objects&gt;</code> to auto block feature"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added ability to exclude pages from auto block feature (see our faqs) (beta)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added option to consider scrolling as acceptation (disabled by default)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Improved style.css"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Remove inline javascript in favor of WordPress enqueue"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Removed \"hours\" in expiration (it caused bugs with internationalizationation)."
+msgstr ""
+
+#. Found in changelog list item.
+msgid "<strong>Please re-save the field. It will be considered as \"days\" while calculating expiration date of cookie.</strong>"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "<strong>Added automatic block of iframes, embeds, scripts</strong> (beta)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "<strong>Added</strong> option to enable/disable tinymce button"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "<strong>Fixed</strong> conflict with the_content filter"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "<strong>Fixed</strong> expire date bug"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "<strong>Fixed</strong> shortcodes in widgets"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Minor improvements "
+msgstr ""
+
+#. Found in changelog list item.
+msgid "<strong>Added</strong> customization options (ex. background+font color)"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added multilanguage support"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added italian language"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Better UI for options panel"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Minor bugfixes"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed shortcodes in <code>[cookie]...[/cookie]</code> not being correctly rendered"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Best tinymce icon with windowmanager"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "New and enhanced developer functions"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added option to link directly to a page instead of popup"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added ability to change default cookie-lock message"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added <code>[cookie-control]</code> shortcode"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Minor changes + bugfixes"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed cookie storing caused by wrong iso date"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Better css for small screens"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed jquery enqueue "
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Plugin reload"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed cookie storing bug in Firefox"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Fixed cookie storing bug"
+msgstr ""
+
+#. Found in changelog list item.
+msgid "Added in CSS support for IE"
+msgstr ""
+
+#. Found in faq header.
+msgid "Shortcodes available"
+msgstr ""
+
+#. Found in faq header.
+msgid "PHP Functions available"
+msgstr ""
+
+#. Found in faq header.
+msgid "Auto block (sperimental*)"
+msgstr ""
+
+#. Found in faq header.
+msgid "Cache"
+msgstr ""
+
+#. Found in faq header.
+msgid "WPML"
+msgstr ""
+
+#. Found in faq list item.
+msgid "= some features in this page are marked with \"sperimental\". It means that we are testing these functions. We highly suggest you to check this page regularly if you are using one of these."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "You can lock parts of code in posts, pages and widget with these shortcode:"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Parameters:"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "To display a box (in pages/posts) with ability to revoke consent (if cookies accepted) or accept cookies (if not done yet):"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "To display a list of active cookies on user client:"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "You can easily verify if cookies consent has been set with:"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "However this will only hide wrapped code. If you want to display an info box, in php you have:"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "(if you omit <code>$text</code> then the default one will be used)"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Please note that <strong>cookie_accepted</strong> returns true if Eu Cookie Law plugin is set to disabled in settings panel."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "If you think that we should provide more shortcodes, functions, or enhance what we already provide, please let us know in <a href=\"https://wordpress.org/support/plugin/eu-cookie-law\">our forum</a>."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "The plugin offers an exclusive function that allows you to block <strong>iframes, embeds, objects and scripts</strong> in posts, pages and widgets. This can be activated in the plugin options panel because is disabled by default."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "If you want to exclude a page from being filtered, you can set custom post field name <strong>eucookielaw_exclude</strong> to <strong>1</strong>. To do this, enable \"Custom Fields\" in \"Screen Options\". Then in the \"Custom Fields\" box enter the name, the value, and hit \"Add Custom Field\"."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "<strong>WP Super Cache</strong> (sperimental*): open the file wp-content/advanced-cache.php and add the following immediately after &lt;?php opening:"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "So that you have:"
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "EU Cookie Law fully supports WPML plugin. All of the front-end strings are translatable to every language using WPML's String Translation module."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "WPML’s String Translation module is part of the Multilingual CMS package. To enable it, you first need to download and install it from your WPML.org account &gt; Downloads section."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Then, go to <strong>WPML-&gt;String Translation</strong> and use the display filter, at the top of the String Translation page, to determine which strings to display."
+msgstr ""
+
+#. Found in faq paragraph.
+msgid "Click on the translations link to open the translation editor and adjust the strings as you want. Be sure to click on ‘translation is complete‘ after you translate. Incomplete translations will not appear in the site."
+msgstr ""

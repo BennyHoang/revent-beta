@@ -1,0 +1,39 @@
+; cPanel first:11.50.0.30 (update_time):1441218736 11.50.0.30: Cpanel::ZoneFile::VERSION:1.3 hostname:cpanel49.proisp.no latest:11.50.0.30
+; Zone file for revent.no
+$TTL 14400
+@      86400	IN      SOA     ns1.proisp.no. firma.proisp.no. (
+		2015090203	; serial, todays date+todays
+		86400		; refresh, seconds
+		7200		; retry, seconds
+		3600000		; expire, seconds
+		86400 )		; minimum, seconds
+
+revent.no. 86400 IN NS ns1.proisp.no.
+revent.no. 86400 IN NS ns2.proisp.no.
+
+
+revent.no. IN A 46.250.210.127
+
+revent.no. IN MX 0 revent.no.
+
+mail IN CNAME revent.no.
+www IN CNAME revent.no.
+ftp IN A 46.250.210.127
+cpanel IN A 46.250.210.127
+webdisk IN A 46.250.210.127
+cpcalendars IN A 46.250.210.127
+cpcontacts IN A 46.250.210.127
+whm IN A 46.250.210.127
+webmail IN A 46.250.210.127
+autoconfig IN A 46.250.210.127
+autodiscover IN A 46.250.210.127
+_autodiscover._tcp IN SRV 0 0 443 cpanel42.proisp.no.
+_caldav._tcp IN SRV 0 0 2079 cpanel42.proisp.no.
+_caldavs._tcp IN SRV 0 0 2080 cpanel42.proisp.no.
+_carddav._tcp IN SRV 0 0 2079 cpanel42.proisp.no.
+_carddavs._tcp IN SRV 0 0 2080 cpanel42.proisp.no.
+_caldav._tcp IN TXT path=/
+_caldavs._tcp IN TXT path=/
+_carddav._tcp IN TXT path=/
+_carddavs._tcp IN TXT path=/
+default._domainkey IN TXT "v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzDaREsY3J7MdI1UXqboSAvjAbII+eMv0OQuxX9Wgqe/ioH+0DjqsuN3pIzfSo3diV1jSdb8oqSXapwsssslHajG4erGhWDuil47IG4lzp1qwVjh+MrkE4DQf+qjt98APT025lzwpkNUGIGxGHrIldBOrxFI2rrX6CJZc+QqVrzzf0DKHkm7dfnRHI4aPN/SAE" eg0PM3h+GEKNQ7ZRwNjYug6rK9tPoezjxxFqArLeEV3TLAz0q+0T/xbaY6A6p353TRalLFdGmX/cnls6lxzg8WsLkRmR3cQm7MCsDPYp22nSPbPJUHn63Jm/ZffpqhggmPeMKxRuR7cWKdOtfHktwIDAQAB\;

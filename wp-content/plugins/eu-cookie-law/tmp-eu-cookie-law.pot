@@ -1,0 +1,300 @@
+# Copyright (C) 2015 EU Cookie Law
+# This file is distributed under the same license as the EU Cookie Law package.
+msgid ""
+msgstr ""
+"Project-Id-Version: EU Cookie Law 2.8\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/eu-cookie-law\n"
+"POT-Creation-Date: 2015-10-17 10:35:52+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: class-admin.php:37
+msgid "Changelog"
+msgstr ""
+
+#: class-admin.php:40
+msgid "Rate us"
+msgstr ""
+
+#: class-admin.php:43
+msgid "Translate"
+msgstr ""
+
+#: class-admin.php:46
+msgid "Support"
+msgstr ""
+
+#: class-admin.php:56
+msgid "Activate"
+msgstr ""
+
+#: class-admin.php:59
+msgid "Auto Block"
+msgstr ""
+
+#: class-admin.php:61
+msgid ""
+"This function will automatically block iframes, embeds and scripts in your "
+"post, pages and widgets."
+msgstr ""
+
+#: class-admin.php:63
+msgid "Enable TinyMce Button"
+msgstr ""
+
+#: class-admin.php:65
+msgid ""
+"Click here if you want to turn on the tinymce button for manual insertion of "
+"EU Cookie Law shortcodes while editing contents."
+msgstr ""
+
+#: class-admin.php:68
+msgid "Cookie acceptance lenght"
+msgstr ""
+
+#: class-admin.php:72
+msgid "days"
+msgstr ""
+
+#: class-admin.php:74
+msgid "weeks"
+msgstr ""
+
+#: class-admin.php:76
+msgid "months"
+msgstr ""
+
+#: class-admin.php:78
+msgid ""
+"Once the user clicks accept the bar will disappear. You can set how long "
+"this will apply for before the bar reappears to the user."
+msgstr ""
+
+#: class-admin.php:78
+msgid "Set \"0\" for SESSION cookie."
+msgstr ""
+
+#: class-admin.php:81
+msgid "Scroll Consent"
+msgstr ""
+
+#: class-admin.php:83
+msgid ""
+"Click here if you want to consider scrolling as cookie acceptation. Users "
+"should be informed about this..."
+msgstr ""
+
+#: class-admin.php:85
+msgid "Navigation Consent"
+msgstr ""
+
+#: class-admin.php:87
+msgid ""
+"Click here if you want to consider continuing navigation as cookie "
+"acceptation. Users should be informed about this..."
+msgstr ""
+
+#: class-admin.php:89
+msgid "Share Cookie across Network"
+msgstr ""
+
+#: class-admin.php:91
+msgid ""
+"Click here if you want to share euCookie across your network (subdomains or "
+"multisite)"
+msgstr ""
+
+#: class-admin.php:94
+msgid "Network Domain"
+msgstr ""
+
+#: class-admin.php:99
+msgid "Appearance"
+msgstr ""
+
+#: class-admin.php:101
+msgid "Position"
+msgstr ""
+
+#: class-admin.php:105
+msgid "Bottom Right"
+msgstr ""
+
+#: class-admin.php:107
+msgid "Top Right"
+msgstr ""
+
+#: class-admin.php:109
+msgid "Top Center"
+msgstr ""
+
+#: class-admin.php:111
+msgid "Bottom Left"
+msgstr ""
+
+#: class-admin.php:113
+msgid "Top Left"
+msgstr ""
+
+#: class-admin.php:115
+msgid "Bottom Center"
+msgstr ""
+
+#: class-admin.php:120
+msgid "Background Color"
+msgstr ""
+
+#: class-admin.php:124
+msgid "Font Color"
+msgstr ""
+
+#: class-admin.php:129
+msgid "Content"
+msgstr ""
+
+#: class-admin.php:132
+msgid "Bar Message"
+msgstr ""
+
+#: class-admin.php:136
+msgid "More Info Text"
+msgstr ""
+
+#: class-admin.php:140
+msgid "Accept Text"
+msgstr ""
+
+#: class-admin.php:144
+msgid "Bar Link"
+msgstr ""
+
+#: class-admin.php:145
+msgid "Use this field if you want to link a page instead of showing the popup"
+msgstr ""
+
+#: class-admin.php:155
+msgid "Custome Message"
+msgstr ""
+
+#: class-admin.php:164 class-admin.php:172
+msgid "Custom URL"
+msgstr ""
+
+#: class-admin.php:174
+msgid "Enter the destination URL"
+msgstr ""
+
+#: class-admin.php:177
+msgid "\"Close Popup\" Text"
+msgstr ""
+
+#: class-admin.php:181
+msgid "Popup Box Content"
+msgstr ""
+
+#: class-admin.php:182
+msgid ""
+"Use this to add a popup that informs your users about your cookie policy"
+msgstr ""
+
+#: class-admin.php:188
+msgid "Blocked code message"
+msgstr ""
+
+#: class-admin.php:189
+msgid "This is the message that will be displayed for locked-code areas"
+msgstr ""
+
+#: class-admin.php:201
+msgid "Cookie enabled message"
+msgstr ""
+
+#: class-admin.php:202
+msgid "This is the message that will be displayed when cookie are enabled"
+msgstr ""
+
+#: class-admin.php:206
+msgid "\"Disable Cookie\" Text"
+msgstr ""
+
+#: class-admin.php:211
+msgid "Cookie disabled message"
+msgstr ""
+
+#: class-admin.php:212
+msgid "This is the message that will be displayed when cookie are not accepted"
+msgstr ""
+
+#: class-admin.php:219
+msgid "Save Changes"
+msgstr ""
+
+#: defaults.php:8
+msgid "By continuing to use the site, you agree to the use of cookies."
+msgstr ""
+
+#: defaults.php:9
+msgid "more information"
+msgstr ""
+
+#: defaults.php:10
+msgid "Accept"
+msgstr ""
+
+#: defaults.php:11
+msgid "Close"
+msgstr ""
+
+#: defaults.php:12
+msgid ""
+"The cookie settings on this website are set to \"allow cookies\" to give you "
+"the best browsing experience possible. If you continue to use this website "
+"without changing your cookie settings or you click \"Accept\" below then you "
+"are consenting to this."
+msgstr ""
+
+#: defaults.php:13
+msgid ""
+"<b>Content not available.</b><br><small>Please allow cookies by clicking "
+"Accept on the banner</small>"
+msgstr ""
+
+#: defaults.php:24
+msgid "Revoke cookie consent"
+msgstr ""
+
+#: defaults.php:25
+msgid "Cookies are enabled"
+msgstr ""
+
+#: defaults.php:26
+msgid ""
+"Cookies are disabled<br>Accept Cookies by clicking \"%s\" in the banner."
+msgstr ""
+
+#. #-#-#-#-#  tmp-eu-cookie-law.pot (EU Cookie Law 2.8)  #-#-#-#-#
+#. Description of the plugin/theme
+#: eu-cookie-law.php:39
+msgid ""
+"EU Cookie Law informs users that your site uses cookies, with option to lock "
+"scripts before consent. Light + Customizable style."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "EU Cookie Law"
+msgstr ""
+
+#. #-#-#-#-#  tmp-eu-cookie-law.pot (EU Cookie Law 2.8)  #-#-#-#-#
+#. Plugin URI of the plugin/theme
+#. #-#-#-#-#  tmp-eu-cookie-law.pot (EU Cookie Law 2.8)  #-#-#-#-#
+#. Author URI of the plugin/theme
+msgid "https://wordpress.org/plugins/eu-cookie-law/"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Alex Moss, Marco Milesi, Peadig, Shane Jones"
+msgstr ""

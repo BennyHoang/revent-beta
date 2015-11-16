@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="nb-NO" prefix="og: http://ogp.me/ns#">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=10" />
+	<title>Side ikke funnet - RÊVENT</title>
+<!--Font awsome :D  -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<!--favicon og ios ikon og alt det der -->
+
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--ikonene ferdig -->
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="pingback" href="http://revent.no/xmlrpc.php" />
+
+	<!-- Inkludere Bootstrap -->
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+
+	    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        window.document.onkeydown = function(e) {
+            if (!e)
+                e = event;
+            if (e.keyCode == 116) {
+                return false;
+            }
+        }
+
+        jQuery(document).ready(function() {
+            var jq = jQuery;
+
+            // Make the Read More on the already-rated box have a unique class
+            var arm = jq('.already-rated .activity-read-more');
+            jq(arm).removeClass('activity-read-more').addClass('already-rated-read-more');
+
+            jq('.star').mouseover(function() {
+                var num = jq(this).attr('id').substr(4, jq(this).attr('id').length);
+                for (var i = 1; i <= num; i++)
+                    jq('#star' + i).attr('src', "http://revent.no/wp-content/plugins/BP-WP-Profile-Page-Post-Reviews/images/star.png");
+            });
+
+            jq('div#review-rating').mouseout(function() {
+                for (var i = 1; i <= 5; i++)
+                    jq('#star' + i).attr('src', "http://revent.no/wp-content/plugins/BP-WP-Profile-Page-Post-Reviews/images/star_off.png");
+            });
+
+            jq('.star').click(function() {
+                var num = jq(this).attr('id').substr(4, jq(this).attr('id').length);
+                for (var i = 1; i <= 5; i++)
+                    jq('#star' + i).attr('src', "http://revent.no/wp-content/plugins/BP-WP-Profile-Page-Post-Reviews/images/star_off.png");
+                for (var i = 1; i <= num; i++)
+                    jq('#star' + i).attr('src', "http://revent.no/wp-content/plugins/BP-WP-Profile-Page-Post-Reviews/images/star.png");
+
+                jq('.star').unbind('mouseover');
+                jq('div#review-rating').unbind('mouseout');
+
+                jq('input#rating').attr('value', num);
+            });
+
+            jq('.already-rated-read-more a').live('click', function(event) {
+                var target = jq(event.target);
+
+                var link_id = target.parent().attr('id').split('-');
+                var a_id = link_id[3];
+
+                var a_inner = '.already-rated blockquote p';
+
+                jq(target).addClass('loading');
+
+                jq.post(
+                        ajaxurl,
+                        {
+                            action: 'get_single_activity_content',
+                            'activity_id': a_id
+                        },
+                function(response) {
+                    jq(a_inner).slideUp(300).html(response).slideDown(300);
+                });
+
+                return false;
+            });
+
+            jq('#whats-new-submit').click(function() {
+                if (jq('input#rating').val() == 0) {
+                    alert('Please choose a star rating!'); //jquery text i18n
+                    return false;
+                }
+            });
+
+            jq('#submit').click(function() {
+                if (jq('input#rating').val() == 0) {
+                    alert('Please Rate for This page/post !!!');
+                    return false;
+                }
+            });
+        });
+    </script>
+    
+<!-- This site is optimized with the Yoast SEO plugin v2.3.5 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta property="og:locale" content="nb_NO" />
+<meta property="og:type" content="object" />
+<meta property="og:title" content="Side ikke funnet - RÊVENT" />
+<meta property="og:site_name" content="RÊVENT" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Side ikke funnet - RÊVENT"/>
+<meta name="twitter:domain" content="RÊVENT"/>
+<!-- / Yoast SEO plugin. -->
+
+<link rel="alternate" type="application/rss+xml" title="RÊVENT &raquo; strøm" href="http://revent.no/feed/" />
+<link rel="alternate" type="application/rss+xml" title="RÊVENT &raquo; kommentarstrøm" href="http://revent.no/comments/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/revent.no\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.2.4"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56812,55356,56807),0,0),c.toDataURL().length>3e3):(d.fillText(String.fromCharCode(55357,56835),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='prorevs-style-common-css'  href='http://revent.no/wp-content/plugins/BP-WP-Profile-Page-Post-Reviews/css/style.css?ver=20121225-2' type='text/css' media='all' />
+<link rel='stylesheet' id='bp-legacy-css-css'  href='http://revent.no/wp-content/plugins/buddypress/bp-templates/bp-legacy/css/buddypress.min.css?ver=2.3.4' type='text/css' media='screen' />
+<link rel='stylesheet' id='contact-form-7-css'  href='http://revent.no/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=4.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='ct-styles-css'  href='http://revent.no/wp-content/plugins/woocommerce-cart-tab/assets/css/style.css?ver=4.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-layout-css'  href='//revent.no/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=2.4.4' type='text/css' media='all' />
+<link rel='stylesheet' id='woocommerce-smallscreen-css'  href='//revent.no/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=2.4.4' type='text/css' media='only screen and (max-width: 768px)' />
+<link rel='stylesheet' id='woocommerce-general-css'  href='//revent.no/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=2.4.4' type='text/css' media='all' />
+<link rel='stylesheet' id='job-alerts-frontend-css'  href='http://revent.no/wp-content/plugins/wp-job-manager-alerts/assets/css/frontend.css?ver=4.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='chosen-css'  href='http://revent.no/wp-content/plugins/wp-job-manager/assets/css/chosen.css?ver=4.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-job-manager-frontend-css'  href='http://revent.no/wp-content/plugins/wp-job-manager/assets/css/frontend.css?ver=4.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='wplc-font-awesome-css'  href='http://revent.no/wp-content/plugins/wp-live-chat-support/css/font-awesome.min.css?ver=4.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='wplc-style-css'  href='http://revent.no/wp-content/plugins/wp-live-chat-support/css/wplcstyle.css?ver=4.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='bpxp_image_field-css-css'  href='http://revent.no/wp-content/plugins/buddypress-xprofile-image-field/css/bp-xp-img-fld.css?ver=1.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='style-css'  href='http://revent.no/wp-content/plugins/buddypress-social-icons/includes/style.css?ver=4.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='bpxprofilertf-css-css'  href='http://revent.no/wp-content/plugins/bp-xprofile-rich-text-field/assets/css/buddypress-xprofile-rich-text-field.css?ver=0.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='wpclef-main-css'  href='http://revent.no/wp-content/plugins/wpclef/assets/dist/css/main.min.css?ver=2.2.8' type='text/css' media='all' />
+<link rel='stylesheet' id='member-profile-css-css'  href='http://revent.no/wp-content/plugins/buddyforms-members/includes/css/member-profile.css?ver=4.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='vantage-style-css'  href='http://revent.no/wp-content/themes/vantage/style.css?ver=2.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='vantage-fontawesome-css'  href='http://revent.no/wp-content/themes/vantage/fontawesome/css/font-awesome.css?ver=4.2.0' type='text/css' media='all' />
+<link rel='stylesheet' id='vantage-premium-css'  href='http://revent.no/wp-content/themes/vantage/premium/style.css?ver=2.4.2' type='text/css' media='all' />
+<link rel='stylesheet' id='sccss_style-css'  href='http://revent.no?sccss=1&#038;ver=4.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='shiftnav-css'  href='http://revent.no/wp-content/plugins/shiftnav-responsive-mobile-menu/assets/css/shiftnav.min.css?ver=1.3.0.2' type='text/css' media='all' />
+<link rel='stylesheet' id='shiftnav-font-awesome-css'  href='http://revent.no/wp-content/plugins/shiftnav-responsive-mobile-menu/assets/css/fontawesome/css/font-awesome.min.css?ver=1.3.0.2' type='text/css' media='all' />
+<link rel='stylesheet' id='shiftnav-standard-dark-css'  href='http://revent.no/wp-content/plugins/shiftnav-responsive-mobile-menu/assets/css/skins/standard-dark.css?ver=1.3.0.2' type='text/css' media='all' />
+<link rel='stylesheet' id='mediaelement-css'  href='http://revent.no/wp-includes/js/mediaelement/mediaelementplayer.min.css?ver=2.16.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css'  href='http://revent.no/wp-includes/js/mediaelement/wp-mediaelement.css?ver=4.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='dashicons-css'  href='http://revent.no/wp-includes/css/dashicons.min.css?ver=4.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='rtmedia-main-css'  href='http://revent.no/wp-content/plugins/buddypress-media/app/assets/css/rtmedia.min.css?ver=3.8.20' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack_css-css'  href='http://revent.no/wp-content/plugins/jetpack/css/jetpack.css?ver=3.7' type='text/css' media='all' />
+<link rel='stylesheet' id='UserAccessManagerAdmin-css'  href='http://revent.no/wp-content/plugins/user-access-manager/css/uamAdmin.css?ver=1.0' type='text/css' media='screen' />
+<link rel='stylesheet' id='UserAccessManagerLoginForm-css'  href='http://revent.no/wp-content/plugins/user-access-manager/css/uamLoginForm.css?ver=1.0' type='text/css' media='screen' />
+<link rel='stylesheet' id='css-owl-css'  href='http://revent.no/wp-content/plugins/buddypress-shortcodes/css/owl.css?ver=4.2.4' type='text/css' media='all' />
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wplc_hide_chat = null;
+var wplc_plugin_url = "http:\/\/revent.no\/wp-content\/plugins";
+var wplc_display_name = "display";
+var wplc_enable_ding = "1";
+var wplc_gravatar_image = "<img src='\/\/www.gravatar.com\/avatar\/854815c06fede9e57818693354c05cfc?s=20' \/>";
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://revent.no/wp-content/plugins/wp-live-chat-support/js/wplc_u.js?ver=4.2.4'></script>
+<script type='text/javascript' src='http://revent.no/wp-content/plugins/wp-live-chat-support/js/jquery-cookie.js?ver=4.2.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var proRevs = {"ajaxurl":"http:\/\/revent.no\/wp-admin\/admin-ajax.php","nonce":"7e579d674c","loadingImg":"http:\/\/revent.no\/wp-content\/plugins\/BP-WP-Profile-Page-Post-Reviews\/images\/loading.gif"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://revent.no/wp-content/plugins/BP-WP-Profile-Page-Post-Reviews/js/common.js?ver=20121225-2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var BP_Confirm = {"are_you_sure":"Er du sikker?"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://revent.no/wp-content/plugins/buddypress/bp-core/js/confirm.min.js?ver=2.3.4'></script>
+<script type='text/javascript' src='http://revent.no/wp-content/plugins/buddypress/bp-core/js/widget-members.min.js?ver=2.3.4'></script>
+<script type='text/javascript' src='http://revent.no/wp-content/plugins/buddypress/bp-core/js/jquery-query.min.js?ver=2.3.4'></script>
+<script type='text/javascript' src='http://revent.no/wp-content/plugins/buddypress/bp-core/js/jquery-cookie.min.js?ver=2.3.4'></script>
+<script type='text/javascript' src='http://revent.no/wp-content/plugins/buddypress/bp-core/js/jquery-scroll-to.min.js?ver=2.3.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var BP_DTheme = {"accepted":"Accepteret","close":"Luk","comments":"kommentarer","leave_group_confirm":"Are you sure you want to leave this group?","mark_as_fav":"Favorit","my_favs":"Mine favoritter","rejected":"Afvist","remove_fav":"Fjern favorit","show_all":"Vis alle","show_all_comments":"Vis alle kommentarer til denne tr\u00e5d","show_x_comments":"Vis alle %d kommentarer","unsaved_changes":"Din profil har \u00e6ndringer, som ikke er lagret. Hvis du forlader siden, vil \u00e6ndringer g\u00e5 tabt.","view":"Vis"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://revent.no/wp-content/plugins/buddypress/bp-templates/bp-legacy/js/buddypress.min.js?ver=2.3.4'></script>
+<script type='text/javascript' src='http://revent.no/wp-includes/js/plupload/plupload.full.min.js?ver=2.1.1'></script>
+<script type='text/javascript' src='http://revent.no/wp-content/plugins/buddypress-xprofile-image-field/js/version_compare.js?ver=0.0.3'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var bpxpL10n = {"imageOptionLabel":"Image","customFieldsLabel":"Custom Fields","bpVersion":"2.3.4"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://revent.no/wp-content/plugins/buddypress-xprofile-image-field/js/bp-xp-img-fld.js?ver=1.3.0'></script>
+<script type='text/javascript' src='http://revent.no/wp-content/themes/vantage/js/jquery.flexslider.min.js?ver=2.1'></script>
+<script type='text/javascript' src='http://revent.no/wp-content/themes/vantage/js/jquery.touchSwipe.min.js?ver=1.6.6'></script>
+<script type='text/javascript' src='http://revent.no/wp-content/themes/vantage/js/jquery.theme-main.min.js?ver=2.4.2'></script>
+<script type='text/javascript' src='http://revent.no/wp-content/themes/vantage/js/jquery.fitvids.min.js?ver=1.0'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var mejsL10n = {"language":"nb-NO","strings":{"Close":"Lukk","Fullscreen":"Fullskjerm","Download File":"Last ned fil","Download Video":"Last ned video","Play\/Pause":"Spill av\/pause","Mute Toggle":"Demp av\/p\u00e5","None":"Ingen","Turn off Fullscreen":"Avbryt fullskjermvisning","Go Fullscreen":"Til fullskjermvisning","Unmute":"Opphev demp","Mute":"Stille","Captions\/Subtitles":"Bildetekster\/undertitler"}};
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://revent.no/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=2.16.2'></script>
+<script type='text/javascript' src='http://revent.no/wp-includes/js/mediaelement/wp-mediaelement.js?ver=4.2.4'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var rtmedia_ajax_url = "http:\/\/revent.no\/wp-admin\/admin-ajax.php";
+var rtmedia_media_slug = "media";
+var rtmedia_lightbox_enabled = "1";
+var rtmedia_direct_upload_enabled = "0";
+var rtmedia_gallery_reload_on_upload = "1";
+var rtmedia_empty_activity_msg = "Please enter some content to post.";
+var rtmedia_empty_comment_msg = "Empty Comment is not allowed.";
+var rtmedia_media_delete_confirmation = "Are you sure you want to delete this media?";
+var rtmedia_media_comment_delete_confirmation = "Er du sikker p\u00e5 at du \u00f8nsker \u00e5 slette denne kommentaren?";
+var rtmedia_album_delete_confirmation = "Are you sure you want to delete this Album?";
+var rtmedia_drop_media_msg = "Drop files here";
+var rtmedia_album_created_msg = " album created successfully.";
+var rtmedia_something_wrong_msg = "Something went wrong. Please try again.";
+var rtmedia_empty_album_name_msg = "Enter an album name.";
+var rtmedia_max_file_msg = "Maks filst\u00f8rrelse :";
+var rtmedia_allowed_file_formats = "Godtatte Filformater";
+var rtmedia_select_all_visible = "Select All Visible";
+var rtmedia_unselect_all_visible = "Unselect All Visible";
+var rtmedia_no_media_selected = "V\u00e6r snill og velg noe media.";
+var rtmedia_selected_media_delete_confirmation = "Are you sure you want to delete the selected media?";
+var rtmedia_selected_media_move_confirmation = "Are you sure you want to move the selected media?";
+var rtmedia_waiting_msg = "Venter";
+var rtmedia_uploaded_msg = "Opplastet";
+var rtmedia_uploading_msg = "Laster opp";
+var rtmedia_upload_failed_msg = "Mislykket";
+var rtmedia_close = "Lukk";
+var rtmedia_edit = "Edit";
+var rtmedia_delete = "Delete";
+var rtmedia_edit_media = "Edit Media";
+var rtmedia_remove_from_queue = "Fjern fra k\u00f8";
+var rtmedia_add_more_files_msg = "Legg til flere filer";
+var rtmedia_file_extension_error_msg = "Fil ikke st\u00f8ttet";
+var rtmedia_more = "mer";
+var rtmedia_less = "f\u00e6rre";
+var rtmedia_delete_uploaded_media = "This media is uploaded. Are you sure you want to delete this media?";
+var rtm_wp_version = "4.2.4";
+var rtmedia_masonry_layout = "false";
+var rtmedia_media_size_config = {"photo":{"thumb":{"width":"150","height":"150","crop":"1"},"medium":{"width":"320","height":"240","crop":"1"},"large":{"width":"800","height":"1600","crop":"0"}},"video":{"activity_media":{"width":"320","height":"240"},"single_media":{"width":"640","height":"480"}},"music":{"activity_media":{"width":"320"},"single_media":{"width":"640"}},"featured":{"default":{"width":"100","height":"100","crop":"1"}}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://revent.no/wp-content/plugins/buddypress-media/app/assets/js/rtmedia.min.js?ver=3.8.20'></script>
+<script type='text/javascript' src='http://revent.no/wp-content/plugins/user-access-manager/js/functions.js?ver=4.2.4'></script>
+<script type='text/javascript' src='http://revent.no/wp-content/plugins/buddypress-shortcodes/js/owl.js?ver=4.2.4'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://revent.no/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://revent.no/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.2.4" />
+<meta name="generator" content="WooCommerce 2.4.4" />
+
+	<script type="text/javascript">var ajaxurl = 'http://revent.no/wp-admin/admin-ajax.php';</script>
+
+<script>
+			jQuery(document).ready(function() {
+                                // expand-content-link renamed to expand-cnt-link for compatibility with twentyfourteen theme
+				jQuery(".expand-content-link").removeClass("expand-content-link").addClass("expand-cnt-link");
+				jQuery(".expand-cnt-link").click(function() {
+					jQuery(this).toggleClass("ecf_closed").parent(".exp-col-content-holder").find(".hidden-content").first().stop().slideToggle("slow").css("display","block");
+					return false;
+				});	
+				jQuery(".expand-cnt-link").toggleClass("ecf_closed").parent(".exp-col-content-holder").find(".hidden-content").css("display","none");
+			
+			//images with no float styles , get floated left
+			if(typeof jQuery(".hidden-content > img").attr("float") === "undefined") {
+				jQuery(".hidden-content > img:not([class])").addClass("alignleft");
+			}
+			
+			/*
+			jQuery(".hidden-content").each(function() {
+				if (jQuery(this).find("img").length) {
+					var hiddenContentpLength = jQuery(this).find(".hiddenContentp").text().length;
+						if( hiddenContentpLength < 200 ) {
+							jQuery(this).css("height","150px");
+						}
+				}
+			});
+			*/
+			
+			jQuery(".textwidget > .exp-col-content-holder > .hidden-content > img+p").attr("style","display:inherit !important;");
+			
+			});
+				</script><style>
+			.expand-cnt-link { font-weight:bold; display:block; margin-bottom:.5em; }
+			.expand-cnt-link:before { font-family: "ecf-icons"; content: "\e601  ";  font-size:16px; }
+			.hidden-content { display:block; vertical-align:top}
+			.exp-col-content-holder { margin:15px 0px 15px 0 !important; }
+			.exp-col-content-holder a { display:inline; }
+			.exp-col-content-holder+p, .exp-col-content-holder img+p, .expand-cnt-link+p { display:none !important; }
+			.ecf_closed:before { font-family: "ecf-icons"; content: "\e600  ";  font-size:16px; }
+			.hiddenContentp { margin:0 !important; }
+			.hiddenContentp+p { display:none;}
+			.hidden-content img { width:20%; }
+			.hidden-content img.alignright { margin-right:0 !important; margin-left:10px; margin-bottom:0px; }
+			.hidden-content img.alignleft { margin-left:0 !important; margin-right:10px; margin-bottom:0px; }
+			.hidden-content .videoWrapper+p { margin-bottom:0; }
+			@font-face {
+				font-family: "ecf-icons";
+				src: url("fonts/ecf-icons.eot");
+			}
+			@font-face {
+				font-family: "ecf-icons";
+				src: url(data:application/x-font-ttf;charset=utf-8;base64,AAEAAAALAIAAAwAwT1MvMg6v8ysAAAC8AAAAYGNtYXDL8hqdAAABHAAAADxnYXNwAAAAEAAAAVgAAAAIZ2x5ZpFu6gUAAAFgAAABZGhlYWT+7sbiAAACxAAAADZoaGVhBigD3wAAAvwAAAAkaG10eAbbADMAAAMgAAAAEGxvY2EAvABeAAADMAAAAAptYXhwAAcAOAAAAzwAAAAgbmFtZUPPHeQAAANcAAABS3Bvc3QAAwAAAAAEqAAAACAAAwQAAZAABQAAApkCzAAAAI8CmQLMAAAB6wAzAQkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAACDmAQPA/8D/wAPAAEAAAAAAAAAAAAAAAAAAAAAgAAAAAAACAAAAAwAAABQAAwABAAAAFAAEACgAAAAGAAQAAQACACDmAf//AAAAIOYA////4RoCAAEAAAAAAAAAAQAB//8ADwABAAAAAAAAAAAAAgAANzkBAAAAAAIABwC+Ai8C+QAaADUAAAEUBwEGIyIvASY1ND8BJyY1ND8BNjMyFwEWFTMUBwEGIyIvASY1ND8BJyY1ND8BNjMyFwEWFQFUBv72BgcIBR0GBuHhBgYdBQgHBgEKBtsF/vUFCAcGHAYG4OAGBhwGBwgFAQsFAdsHBv72BgYdBQgHBuDhBgcIBR0GBv72BggHBv72BgYdBQgHBuDhBgcIBR0GBv72BggAAAIALAD1AmYDHQAaADUAAAEUBwEGIyInASY1ND8BNjMyHwE3NjMyHwEWFTUUBwEGIyInASY1ND8BNjMyHwE3NjMyHwEWFQJmBf71BQgHBv72BgYcBgcIBuDhBQgHBh0FBf71BQgHBv72BgYcBgcIBuDhBQgHBh0FAhIHBv72BgYBCgYHCAUdBgbh4QYGHQUI3AgF/vUFBQELBQgHBhwGBuDgBgYcBgcAAAEAAAABAADFBlcuXw889QALBAAAAAAAzrVBZAAAAADOtUFkAAAAAAJmAx0AAAAIAAIAAAAAAAAAAQAAA8D/wAAABAAAAAAaAmYAAQAAAAAAAAAAAAAAAAAAAAQAAAAAAgAAAAJJAAcCkgAsAAAAAAAKAF4AsgAAAAEAAAAEADYAAgAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAOAK4AAQAAAAAAAQASAAAAAQAAAAAAAgAOAFUAAQAAAAAAAwASACgAAQAAAAAABAASAGMAAQAAAAAABQAWABIAAQAAAAAABgAJADoAAQAAAAAACgAoAHUAAwABBAkAAQASAAAAAwABBAkAAgAOAFUAAwABBAkAAwASACgAAwABBAkABAASAGMAAwABBAkABQAWABIAAwABBAkABgASAEMAAwABBAkACgAoAHUAZQBjAGYALQBpAGMAbwBuAHMAVgBlAHIAcwBpAG8AbgAgADAALgAwAGUAYwBmAC0AaQBjAG8AbgBzZWNmLWljb25zAGUAYwBmAC0AaQBjAG8AbgBzAFIAZQBnAHUAbABhAHIAZQBjAGYALQBpAGMAbwBuAHMARwBlAG4AZQByAGEAdABlAGQAIABiAHkAIABJAGMAbwBNAG8AbwBuAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA) format("truetype"),
+					 url(data:application/font-woff;charset=utf-8;base64,d09GRgABAAAAAAUUAAsAAAAABMgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABPUy8yAAABCAAAAGAAAABgDq/zK2NtYXAAAAFoAAAAPAAAADzL8hqdZ2FzcAAAAaQAAAAIAAAACAAAABBnbHlmAAABrAAAAWQAAAFkkW7qBWhlYWQAAAMQAAAANgAAADb+7sbiaGhlYQAAA0gAAAAkAAAAJAYoA99obXR4AAADbAAAABAAAAAQBtsAM2xvY2EAAAN8AAAACgAAAAoAvABebWF4cAAAA4gAAAAgAAAAIAAHADhuYW1lAAADqAAAAUsAAAFLQ88d5HBvc3QAAAT0AAAAIAAAACAAAwAAAAMEAAGQAAUAAAKZAswAAACPApkCzAAAAesAMwEJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAg5gEDwP/A/8ADwABAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAMAAAAUAAMAAQAAABQABAAoAAAABgAEAAEAAgAg5gH//wAAACDmAP///+EaAgABAAAAAAAAAAEAAf//AA8AAQAAAAAAAAAAAAIAADc5AQAAAAACAAcAvgIvAvkAGgA1AAABFAcBBiMiLwEmNTQ/AScmNTQ/ATYzMhcBFhUzFAcBBiMiLwEmNTQ/AScmNTQ/ATYzMhcBFhUBVAb+9gYHCAUdBgbh4QYGHQUIBwYBCgbbBf71BQgHBhwGBuDgBgYcBgcIBQELBQHbBwb+9gYGHQUIBwbg4QYHCAUdBgb+9gYIBwb+9gYGHQUIBwbg4QYHCAUdBgb+9gYIAAACACwA9QJmAx0AGgA1AAABFAcBBiMiJwEmNTQ/ATYzMh8BNzYzMh8BFhU1FAcBBiMiJwEmNTQ/ATYzMh8BNzYzMh8BFhUCZgX+9QUIBwb+9gYGHAYHCAbg4QUIBwYdBQX+9QUIBwb+9gYGHAYHCAbg4QUIBwYdBQISBwb+9gYGAQoGBwgFHQYG4eEGBh0FCNwIBf71BQUBCwUIBwYcBgbg4AYGHAYHAAABAAAAAQAAxQZXLl8PPPUACwQAAAAAAM61QWQAAAAAzrVBZAAAAAACZgMdAAAACAACAAAAAAAAAAEAAAPA/8AAAAQAAAAAGgJmAAEAAAAAAAAAAAAAAAAAAAAEAAAAAAIAAAACSQAHApIALAAAAAAACgBeALIAAAABAAAABAA2AAIAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAADgCuAAEAAAAAAAEAEgAAAAEAAAAAAAIADgBVAAEAAAAAAAMAEgAoAAEAAAAAAAQAEgBjAAEAAAAAAAUAFgASAAEAAAAAAAYACQA6AAEAAAAAAAoAKAB1AAMAAQQJAAEAEgAAAAMAAQQJAAIADgBVAAMAAQQJAAMAEgAoAAMAAQQJAAQAEgBjAAMAAQQJAAUAFgASAAMAAQQJAAYAEgBDAAMAAQQJAAoAKAB1AGUAYwBmAC0AaQBjAG8AbgBzAFYAZQByAHMAaQBvAG4AIAAwAC4AMABlAGMAZgAtAGkAYwBvAG4Ac2VjZi1pY29ucwBlAGMAZgAtAGkAYwBvAG4AcwBSAGUAZwB1AGwAYQByAGUAYwBmAC0AaQBjAG8AbgBzAEcAZQBuAGUAcgBhAHQAZQBkACAAYgB5ACAASQBjAG8ATQBvAG8AbgAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==) format("woff");
+				font-weight: normal;
+				font-style: normal;
+			}
+
+			[class^="ecf-icon-"], [class*=" ecf-icon-"] {
+				font-family: "ecf-icons";
+				speak: none;
+				font-style: normal;
+				font-weight: normal;
+				font-variant: normal;
+				text-transform: none;
+				line-height: 1;
+
+				/* Better Font Rendering =========== */
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+			.videoWrapper {
+				position: relative;
+				padding-bottom: 56.25%; /* 16:9 */
+				padding-top: 25px;
+				height: 0;
+			}
+			.videoWrapper iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+	<!-- ShiftNav CSS 
+	================================================================ -->
+	<style type="text/css" id="shiftnav-dynamic-css">
+		
+	@media only screen and (min-width:960px){ #shiftnav-toggle-main, .shiftnav-toggle-mobile{ display:none; } .shiftnav-wrap { padding-top:0 !important; } }
+
+	</style>
+	<!-- end ShiftNav CSS -->
+
+	
+        <script type="text/javascript">
+                        /* var wplc_ajaxurl = 'http://revent.no/wp-content/plugins/wp-live-chat-support/ajax.php'; */
+            var ajaxurl = 'http://revent.no/wp-admin/admin-ajax.php';
+            var wplc_ajaxurl = ajaxurl;
+                    var wplc_nonce = 'beb7d9e6b1';
+        </script>
+        			<style type="text/css">
+					.rtmedia-activity-container .media-type-photo .rtmedia-item-thumbnail {
+		max-width: 320px;
+		max-height: 240px;
+		}
+		.rtmedia-activity-container .mejs-container.mejs-video{
+		min-height: 240px;
+		min-width: 320px;
+		}
+				.rtmedia-container ul.rtmedia-list li.rtmedia-list-item div.rtmedia-item-thumbnail {
+		width: 150px;
+		height: 150px;
+		line-height: 150px;
+		}
+		.rtmedia-container ul.rtmedia-list li.rtmedia-list-item div.rtmedia-item-thumbnail img {
+		max-width: 150px;
+		max-height: 150px;
+		}
+		.rtmedia-container .rtmedia-list  .rtmedia-list-item {
+		width: 150px;
+		}
+					</style>
+			
+<link rel='dns-prefetch' href='//i0.wp.com'>
+<link rel='dns-prefetch' href='//i1.wp.com'>
+<link rel='dns-prefetch' href='//i2.wp.com'>
+<style type='text/css'>img#wpstats{display:none}</style>	<!--[if lt IE 9]>
+		<script src="http://revent.no/wp-content/themes/vantage/js/html5.js" type="text/javascript"></script>
+	<![endif]-->
+	<!--[if (gte IE 6)&(lte IE 8)]>
+		<script type="text/javascript" src="http://revent.no/wp-content/themes/vantage/js/selectivizr.js"></script>
+	<![endif]-->
+	<meta name="viewport" content="width=device-width, initial-scale=1" />	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+	<style type="text/css" media="screen">
+		#footer-widgets .widget { width: 100%; }
+		@media screen and (max-width: 640px) {
+			#footer-widgets .widget { width: auto; float: none; }
+		}
+	</style>
+	<style type="text/css" id="vantage-footer-widgets">#footer-widgets aside { width : 100%; } </style> <style type="text/css" id="customizer-css">@import url(http://fonts.googleapis.com/css?family=Oxygen:400|Oxygen:300); body,button,input,select,textarea { font-family: "Oxygen"; font-weight: 400 } #masthead h1 { font-family: "Oxygen"; font-weight: 400 } h1,h2,h3,h4,h5,h6 { font-family: "Oxygen"; font-weight: 300; font-weight: 300 } .entry-content { color: #000000 } .entry-content h1,.entry-content h2,.entry-content h3,.entry-content h4,.entry-content h5,.entry-content h6 { color: #262626 } .main-navigation { background-color: #ffffff } .main-navigation a { color: #000000 } .main-navigation ul ul { background-color: #ffffff } .main-navigation ul ul a { color: #000000 } .main-navigation ul li:hover > a, #search-icon #search-icon-icon:hover { background-color: #aaaaaa } .main-navigation ul ul li:hover > a { background-color: #aaaaaa; color: #000000 } .main-navigation [class^="fa fa-"], .main-navigation .mobile-nav-icon { color: #000000 } .main-navigation ul li.current-menu-item > a, .main-navigation ul li.current-menu-item > a [class^="fa fa-"], .main-navigation ul li.current-page-item > a, .main-navigation ul li.current-page-item > a [class^="fa fa-"] { color: #000000 } #search-icon #search-icon-icon { background-color: #ffffff } #search-icon #search-icon-icon .vantage-icon-search { color: #000000 } #search-icon .searchform { background-color: #ffffff } #search-icon .searchform input[name=s] { color: #000000 } .main-navigation ul li a { padding-top: 22px; padding-bottom: 22px } #header-sidebar .widget_nav_menu ul.menu > li > ul.sub-menu { border-top-color: #aaaaaa } #masthead { background-color: #ffffff } #main { background-color: #ffffff } #colophon, body.layout-full { background-color: #000000 } #footer-widgets .widget .widget-title { color: #f7f7f7 } #footer-widgets .widget { color: #e8e8e8 } </style>
+</head>
+
+<body class="error404 sidebar-position-none responsive layout-full no-js has-sidebar revent">
+
+
+<div id="page-wrapper">
+
+	
+	
+
+
+<div id="topBarmin">
+<span id="topnbarBrker"></span>
+<span id="topCatioonTekst">NORGES STØRSTE UTVALG AV LIVE UNDERHOLDNING</span>
+<a href="https://www.facebook.com/Livemusictoparty?fref=ts" alt="revent på facebook"><img id="topbarBilde" src="http://revent.no/wp-content/themes/vantage/facebook.png" alt="Revent på facebook"/></a>
+</div>
+<header id="masthead" class="site-header masthead-logo-in-menu" role="banner">
+
+	
+<nav role="navigation" class="site-navigation main-navigation primary use-sticky-menu">
+
+	<div class="full-container">
+					<a href="http://revent.no/" title="RÊVENT" rel="home" class="logo"><img src="http://i1.wp.com/revent.no/wp-content/uploads/2015/09/live-musikk-til-fest-logonavn-708x380.png?resize=708%2C380"  class="logo-height-constrain"  alt="RÊVENT Logo"  data-retina-image="http://i2.wp.com/revent.no/wp-content/uploads/2015/09/live-musikk-til-fest-logonavn-708x380.png?resize=708%2C380"  /></a>
+				
+					<div class="menu-hovedmeny-container"><ul id="menu-hovedmeny" class="menu"><li id="menu-item-547" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-547"><a href="http://revent.no/foresporsel/">SEND FORESPØRSEL</a></li>
+<li id="menu-item-31" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31"><a href="http://revent.no/members/">SE ARTISTER</a></li>
+<li id="menu-item-614" class="bp-menu bp-register-nav menu-item menu-item-type-custom menu-item-object-custom menu-item-614"><a href="http://revent.no/register/"><span class="icon"></span>REGISTER ARTIST</a></li>
+<li id="menu-item-665" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-665"><a href="http://revent.no/om-oss/">OM RÊVENT</a>
+<ul class="sub-menu">
+	<li id="menu-item-790" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-790"><a href="http://revent.no/referanser/">Referanser</a></li>
+	<li id="menu-item-637" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-637"><a href="http://revent.no/vilkar/">Vilkår</a></li>
+	<li id="menu-item-830" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-830"><a href="http://revent.no/kontakt-revent/">Kontakt Rêvent</a></li>
+</ul>
+</li>
+<li id="menu-item-705" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-705"><a href="http://revent.no/logg-inn/">LOGG INN</a></li>
+</ul></div>			</div>
+</nav><!-- .site-navigation .main-navigation -->
+
+
+<span id="shiftnav-toggle-main-button" class="shiftnav-toggle shiftnav-toggle-shiftnav-main shiftnav-toggle-burger" data-shiftnav-target="shiftnav-main"><i class="fa fa-bars"></i></span>
+
+</header><!-- #masthead .site-header -->
+	
+	
+	
+	<div id="main" class="site-main">
+		<div class="full-container">
+			
+
+
+<div id="primary" class="content-area">
+	<div id="content" class="site-content" role="main">
+
+		<article id="post-0" class="post error404 not-found">
+
+			<div class="entry-main">
+
+				
+				<header class="entry-header">
+					<h1 class="entry-title">That page can't be found.</h1>
+				</header><!-- .entry-header -->
+
+				<div class="entry-content">
+					<p>It looks like nothing was found at this location. Maybe try one of the links below or a search?</p>
+
+					
+<form method="get" class="searchform" action="http://revent.no/" role="search">
+	<input type="text" class="field" name="s" value="" placeholder="Søk "/>
+</form>
+
+							<div class="widget widget_recent_entries">		<h2 class="widgettitle">Siste innlegg</h2>		<ul>
+					<li>
+				<a href="http://revent.no/hello-world/">Hello world!</a>
+						</li>
+				</ul>
+		</div>
+					<div class="widget">
+						<h2 class="widgettitle">Most Used Categories</h2>
+						<ul>
+							<li class="cat-item cat-item-1"><a href="http://revent.no/category/uncategorized/" >Uncategorized</a> (1)
+</li>
+						</ul>
+					</div><!-- .widget -->
+
+					<div class="widget widget_archive"><h2 class="widgettitle">Arkiv</h2><p>Try looking in the monthly archives.</p>		<label class="screen-reader-text" for="archives-dropdown--1">Arkiv</label>
+		<select id="archives-dropdown--1" name="archive-dropdown" onchange='document.location.href=this.options[this.selectedIndex].value;'>
+			
+			<option value="">Velg måned</option>
+				<option value='http://revent.no/2015/08/'> august 2015 </option>
+
+		</select>
+</div>
+					<div class="widget widget_tag_cloud"><h2 class="widgettitle">Stikkord</h2><div class="tagcloud"></div>
+</div>
+				</div><!-- .entry-content -->
+
+				
+			</div><!-- .entry-main -->
+
+		</article><!-- #post-0 .post .error404 .not-found -->
+
+	</div><!-- #content .site-content -->
+</div><!-- #primary .content-area -->
+
+					</div><!-- .full-container -->
+	</div><!-- #main .site-main -->
+
+	
+	
+	<footer id="colophon" class="site-footer" role="contentinfo">
+
+	<div id="footer-widgets" class="full-container">
+		<aside id="siteorigin-panels-builder-3" class="widget widget_siteorigin-panels-builder"><div id="pl-w561eac18cd667"><div class="panel-grid" id="pg-w561eac18cd667-0" ><div class="panel-grid-cell" id="pgc-w561eac18cd667-0-0" ><div class="so-panel widget widget_vantage-social-media widget_vantage-social-media panel-first-child panel-last-child" id="panel-w561eac18cd667-0-0-0"><div style="margin:auto;text-align:center;" class="panel-widget-style" ><h3 class="widget-title">SOSIALE MEDIER</h3><a class="social-media-icon social-media-icon-facebook social-media-icon-large" href="https://www.facebook.com/Livemusictoparty?fref=ts" title="RÊVENT Facebook" target="_blank"><span class="fa fa-facebook"></span></a><a class="social-media-icon social-media-icon-instagram social-media-icon-large" href="https://instagram.com/revent.no" title="RÊVENT Instagram" target="_blank"><span class="fa fa-instagram"></span></a></div></div></div><div class="panel-grid-cell" id="pgc-w561eac18cd667-0-1" ><div class="so-panel widget widget_sow-image widget_sow-image panel-first-child" id="panel-w561eac18cd667-0-1-0"><div style="margin:auto;width:auto;max-width:100px;" class="panel-widget-style" ><div class="so-widget-sow-image so-widget-sow-image-base">
+	<img src="http://i2.wp.com/revent.no/wp-content/uploads/2015/09/logo-uten-bakgrunn-hvit1.png?fit=300%2C300" alt="Musikk til julebord, firmafest, bryllup, utested eller event? NORGES STØRSTE UTVALG AV LIVE BAND, ARTISTER OG DJs "  class="so-widget-image" style="max-width:100%; height:auto; width:100%; display:block" />
+</div></div></div><div class="so-panel widget widget_sow-editor widget_sow-editor panel-last-child" id="panel-w561eac18cd667-0-1-1"><div style="Margin:auto;text-align:center;" class="panel-widget-style" ><div class="so-widget-sow-editor so-widget-sow-editor--d75171398898">
+<div class="siteorigin-widget-tinymce textwidget">
+	<p style="text-align: center">&copy;R&Ecirc;VENT 2015</p>
+<p style="text-align: center">ORG.NUMMER:&nbsp; 911636611</p>
+<p style="text-align: center"><a href="http://universellutvikling.no">UNIVERSELL UTVIKLING</a></p>
+</div></div></div></div></div><div class="panel-grid-cell" id="pgc-w561eac18cd667-0-2" ><div class="so-panel widget widget_sow-button widget_sow-button panel-first-child panel-last-child" id="panel-w561eac18cd667-0-2-0"><div class="kontaktKnapperFotter panel-widget-style" style="margin:bottom:3px;margin:Auto;text-align:Center;" ><div class="so-widget-sow-button so-widget-sow-button-wire-48fcfa49ed26"><div class="ow-button-base ow-button-align-center">
+
+	
+	<a class="ow-button-hover" href="" id="sendossmailfooterbtn" >
+		<span>
+			<span class="sow-icon-fontawesome" data-sow-icon="&#xf003;" style="color: #ffffff"></span>
+			KONTAKT		</span>
+	</a>
+</div></div></div></div></div></div></div></aside>	</div><!-- #footer-widgets -->
+
+	
+	
+</footer><!-- #colophon .site-footer -->
+	
+</div><!-- #page-wrapper -->
+
+
+
+  <script>
+      jQuery(document).ready(function($){
+
+
+      equalheight = function(container){
+
+          var currentTallest = 0,
+              currentRowStart = 0,
+              rowDivs = new Array(),
+              $el,
+              topPosition = 0;
+          $(container).each(function() {
+
+              $el = $(this);
+              $($el).height('auto')
+              topPostion = $el.position().top;
+
+              if (currentRowStart != topPostion) {
+                  for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+                      rowDivs[currentDiv].height(currentTallest);
+                  }
+                  rowDivs.length = 0; // empty the array
+                  currentRowStart = topPostion;
+                  currentTallest = $el.height();
+                  rowDivs.push($el);
+              } else {
+                  rowDivs.push($el);
+                  currentTallest = (currentTallest < $el.height()) ? ($el.height()) : (currentTallest);
+              }
+              for (currentDiv = 0 ; currentDiv < rowDivs.length ; currentDiv++) {
+                  rowDivs[currentDiv].height(currentTallest);
+              }
+          });
+      }
+
+      $(window).load(function() {
+          equalheight('.all_main .auto_height');
+      });
+
+
+      $(window).resize(function(){
+          equalheight('.all_main .auto_height');
+      });
+
+
+      });
+  </script>
+
+   <script>
+
+
+
+//    tabs
+
+jQuery(document).ready(function($){
+
+	(function ($) {
+		$('.soua-tab ul.soua-tabs').addClass('active').find('> li:eq(0)').addClass('current');
+
+		$('.soua-tab ul.soua-tabs li a').click(function (g) {
+			var tab = $(this).closest('.soua-tab'),
+				index = $(this).closest('li').index();
+
+			tab.find('ul.soua-tabs > li').removeClass('current');
+			$(this).closest('li').addClass('current');
+
+			tab.find('.tab_content').find('div.tabs_item').not('div.tabs_item:eq(' + index + ')').slideUp();
+			tab.find('.tab_content').find('div.tabs_item:eq(' + index + ')').slideDown();
+
+			g.preventDefault();
+		} );
+
+
+
+
+
+//accordion
+
+//    $('.accordion > li:eq(0) a').addClass('active').next().slideDown();
+
+    $('.soua-accordion a').click(function(j) {
+        var dropDown = $(this).closest('li').find('p');
+
+        $(this).closest('.soua-accordion').find('p').not(dropDown).slideUp();
+
+        if ($(this).hasClass('active')) {
+            $(this).removeClass('active');
+        } else {
+            $(this).closest('.soua-accordion').find('a.active').removeClass('active');
+            $(this).addClass('active');
+        }
+
+        dropDown.stop(false, true).slideToggle();
+
+        j.preventDefault();
+    });
+})(jQuery);
+
+
+
+});
+
+</script>
+<!-- Generated in 0,768 seconds. (133 q) -->
+
+	
+
+
+	<!-- ShiftNav #shiftnav-main -->
+	<div class="shiftnav shiftnav-nojs shiftnav-left-edge shiftnav-skin-standard-dark shiftnav-transition-standard" id="shiftnav-main" data-shiftnav-id="shiftnav-main">
+		<div class="shiftnav-inner">
+			<h3 class="shiftnav-menu-title shiftnav-site-title"><a href="http://revent.no">RÊVENT</a></h3>
+	<nav class="shiftnav-nav"><ul id="menu-hovedmeny-1" class="shiftnav-menu shiftnav-targets-medium shiftnav-targets-text-default shiftnav-targets-icon-default shiftnav-indent-subs"><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-547 shiftnav-depth-0"><a class="shiftnav-target"  href="http://revent.no/foresporsel/">SEND FORESPØRSEL</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-31 shiftnav-depth-0"><a class="shiftnav-target"  href="http://revent.no/members/">SE ARTISTER</a></li><li class="bp-menu bp-register-nav menu-item menu-item-type-custom menu-item-object-custom menu-item-614 shiftnav-depth-0"><a class="shiftnav-target"  href="http://revent.no/register/">REGISTER ARTIST</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-665 shiftnav-sub- shiftnav-depth-0"><a class="shiftnav-target"  href="http://revent.no/om-oss/">OM RÊVENT</a>
+<ul class="sub-menu sub-menu-1">
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-790 shiftnav-depth-1"><a class="shiftnav-target"  href="http://revent.no/referanser/">Referanser</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-637 shiftnav-depth-1"><a class="shiftnav-target"  href="http://revent.no/vilkar/">Vilkår</a></li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-830 shiftnav-depth-1"><a class="shiftnav-target"  href="http://revent.no/kontakt-revent/">Kontakt Rêvent</a></li><li class="shiftnav-retract"><a class="shiftnav-target"><i class="fa fa-chevron-left"></i> Back</a></li></ul>
+</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-705 shiftnav-depth-0"><a class="shiftnav-target"  href="http://revent.no/logg-inn/">LOGG INN</a></li></ul></nav>		</div><!-- /.shiftnav-inner -->
+	</div><!-- /.shiftnav #shiftnav-main -->
+
+
+	<style type="text/css" media="all" id="siteorigin-panels-grids-wp_footer">/* Layout w561eac18cd667 */ #pgc-w561eac18cd667-0-0 { width:27.5% } #pgc-w561eac18cd667-0-1 { width:45.583% } #pgc-w561eac18cd667-0-2 { width:26.917% } #pg-w561eac18cd667-0 .panel-grid-cell { float:left } #pl-w561eac18cd667 .panel-grid-cell .so-panel { margin-bottom:35px } #pl-w561eac18cd667 .panel-grid-cell .so-panel:last-child { margin-bottom:0px } #pg-w561eac18cd667-0 { margin-left:-15px;margin-right:-15px } #pg-w561eac18cd667-0 .panel-grid-cell { padding-left:15px;padding-right:15px } @media (max-width:780px){ #pg-w561eac18cd667-0 .panel-grid-cell { float:none;width:auto } #pgc-w561eac18cd667-0-0 , #pgc-w561eac18cd667-0-1 { margin-bottom:35px } #pl-w561eac18cd667 .panel-grid { margin-left:0;margin-right:0 } #pl-w561eac18cd667 .panel-grid-cell { padding:0 }  } </style><div class="right cart-tab light hidden">			<a href="http://revent.no/cart/" title="Gå til betaling" class="cart-parent ">
+				<span class="amount">&#107;&#114;&nbsp;0.00</span><span class="contents">Valgte</span>			</a>
+			<div class="widget woocommerce widget_shopping_cart"><div class="widget_shopping_cart_content"></div></div></div><a href="#" id="scroll-to-top" title="Back To Top"><span class="vantage-icon-arrow-up"></span></a><link rel='stylesheet' id='siteorigin-panels-front-css'  href='http://revent.no/wp-content/plugins/siteorigin-panels/css/front.css?ver=2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='sow-button-wire-48fcfa49ed26-css'  href='http://revent.no/wp-content/uploads/siteorigin-widgets/sow-button-wire-48fcfa49ed26.css?ver=4.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='sow-button-base-css'  href='http://revent.no/wp-content/plugins/so-widgets-bundle/widgets/so-button-widget/css/style.css?ver=1.4.4' type='text/css' media='all' />
+<link rel='stylesheet' id='siteorigin-widget-icon-font-fontawesome-css'  href='http://revent.no/wp-content/plugins/so-widgets-bundle/icons/fontawesome/style.css?ver=4.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='owl-css-css'  href='http://revent.no/wp-content/plugins/addon-so-widgets-bundle/css/owl.carousel.css?ver=4.2.4' type='text/css' media='all' />
+<link rel='stylesheet' id='widgets-css-css'  href='http://revent.no/wp-content/plugins/addon-so-widgets-bundle/css/widgets.css?ver=4.2.4' type='text/css' media='all' />
+<script type='text/javascript' src='http://revent.no/wp-includes/js/jquery/ui/core.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://revent.no/wp-includes/js/jquery/ui/widget.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://revent.no/wp-includes/js/jquery/ui/mouse.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://revent.no/wp-includes/js/jquery/ui/draggable.min.js?ver=1.11.4'></script>
+<script type='text/javascript' src='http://revent.no/wp-content/plugins/user-meta-display/assets/js/scripts-user_meta_display.js?ver=1.2.2'></script>
+<script type='text/javascript' src='http://revent.no/wp-content/plugins/jetpack/modules/photon/photon.js?ver=20130122'></script>
+<script type='text/javascript' src='http://revent.no/wp-includes/js/underscore.min.js?ver=1.6.0'></script>
+<script type='text/javascript' src='http://revent.no/wp-includes/js/backbone.min.js?ver=1.1.2'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var template_url = "http:\/\/revent.no\/wp-admin\/admin-ajax.php?action=rtmedia_get_template&template=media-gallery-item";
+var rtmedia_exteansions = {"photo":["jpg","jpeg","png","gif"],"video":["mp4"],"music":["mp3"]};
+var rtMedia_plupload_config = {"url":"\/foresporsel\/jquery-1.11.3.min.js\/upload\/","runtimes":"html5,flash,html4","browse_button":"rtMedia-upload-button","container":"rtmedia-upload-container","drop_element":"drag-drop-area","filters":[{"title":"Media Files","extensions":"jpg,jpeg,png,gif,mp4,mp3"}],"max_file_size":"32M","multipart":"1","urlstream_upload":"1","flash_swf_url":"http:\/\/revent.no\/wp-includes\/js\/plupload\/plupload.flash.swf","silverlight_xap_url":"http:\/\/revent.no\/wp-includes\/js\/plupload\/plupload.silverlight.xap","file_data_name":"rtmedia_file","multi_selection":"1","multipart_params":{"redirect":"no","action":"wp_handle_upload","_wp_http_referer":"\/foresporsel\/jquery-1.11.3.min.js","mode":"file_upload","rtmedia_upload_nonce":"b387f1bf0f"},"max_file_size_msg":"32M"};
+var rMedia_loading_file = "http:\/\/revent.no\/wp-admin\/images\/loading.gif";
+var rMedia_loading_media = "http:\/\/revent.no\/wp-content\/plugins\/buddypress-media\/app\/assets\/admin\/img\/boxspinner.gif";
+var rtmedia_media_thumbs = {"photo":"http:\/\/revent.no\/wp-content\/plugins\/buddypress-media\/app\/assets\/admin\/img\/image_thumb.png","video":"http:\/\/revent.no\/wp-content\/plugins\/buddypress-media\/app\/assets\/admin\/img\/video_thumb.png","music":"http:\/\/revent.no\/wp-content\/plugins\/buddypress-media\/app\/assets\/admin\/img\/audio_thumb.png"};
+var rtmedia_set_featured_image_msg = "Featured media set successfully.";
+var rtmedia_unset_featured_image_msg = "Featured media removed successfully.";
+var rtmedia_load_more_or_pagination = "load_more";
+var rtmedia_bp_enable_activity = "1";
+var rtmedia_upload_progress_error_message = "There are some uploads in progress. Do you want to cancel them?";
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://revent.no/wp-content/plugins/buddypress-media/app/assets/js/rtMedia.backbone.js?ver=3.8.20'></script>
+<script type='text/javascript' src='http://revent.no/wp-content/plugins/contact-form-7/includes/js/jquery.form.min.js?ver=3.51.0-2014.06.20'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var _wpcf7 = {"loaderUrl":"http:\/\/revent.no\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Sender ..."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://revent.no/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=4.2.2'></script>
+<script type='text/javascript' src='//revent.no/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/foresporsel\/jquery-1.11.3.min.js?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//revent.no/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=2.4.4'></script>
+<script type='text/javascript' src='//revent.no/wp-content/plugins/woocommerce/assets/js/jquery-cookie/jquery.cookie.min.js?ver=1.4.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/foresporsel\/jquery-1.11.3.min.js?wc-ajax=%%endpoint%%","fragment_name":"wc_fragments"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='//revent.no/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=2.4.4'></script>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201542'></script>
+<script type='text/javascript' src='//revent.no/wp-content/plugins/woocommerce/assets/js/chosen/chosen.jquery.min.js?ver=1.0.0'></script>
+<script type='text/javascript' src='http://revent.no/wp-content/plugins/wp-job-manager-locations//assets/js/main.js?ver=20140525'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var shiftnav_data = {"shift_body":"on","shift_body_wrapper":"","lock_body":"on","lock_body_x":"off","swipe_close":"on","swipe_open":"off","swipe_tolerance_x":"150","swipe_tolerance_y":"60","swipe_edge_proximity":"80","open_current":"off","collapse_accordions":"off","scroll_panel":"on","breakpoint":"960","touch_off_close":"on","scroll_offset":"100","disable_transforms":"off"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://revent.no/wp-content/plugins/shiftnav-responsive-mobile-menu/assets/js/shiftnav.min.js?ver=1.3.0.2'></script>
+<script type='text/javascript' src='http://revent.no/wp-content/plugins/buddypress-media/lib/touchswipe/jquery.touchSwipe.min.js?ver=3.8.20'></script>
+<script type='text/javascript' src='http://revent.no/wp-content/plugins/addon-so-widgets-bundle/js/owl.carousel.min.js?ver=4.2.4'></script>
+<script type='text/javascript' src='http://stats.wp.com/e-201542.js' async defer></script>
+<script type='text/javascript'>
+	_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:3.7',blog:'100018427',post:'0',tz:'2',srv:'revent.no'} ]);
+	_stq.push([ 'clickTrackerInit', '100018427', '0' ]);
+</script>
+
+</body>
+</html>

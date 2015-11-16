@@ -1,0 +1,300 @@
+# Copyright (C) 2014 WP Job Manager - Job Alerts
+# This file is distributed under the same license as the WP Job Manager - Job Alerts package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WP Job Manager - Job Alerts 1.1.0\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-job-manager-alerts\n"
+"POT-Creation-Date: 2015-10-10 15:54+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-10-27 15:56+0100\n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.8.4\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: nb\n"
+
+#: includes/class-wp-job-manager-alerts-notifier.php:36
+msgid "Job Alert Results Matching \"%s\""
+msgstr "Varsler som stemmer overens med \"%s\""
+
+#: includes/class-wp-job-manager-alerts-notifier.php:152
+msgid ""
+"No jobs were found matching your search. Login to your account to change your alert "
+"criteria"
+msgstr ""
+"Dessverre ble ingen forespørsler som stemmer overens med ditt søk funnet. Logg inn på din "
+"konto for å endre varselskriterier."
+
+#: includes/class-wp-job-manager-alerts-notifier.php:169
+msgid "This job alert will automatically stop sending after %s."
+msgstr "Dette varslet utgår automatisk etter %s."
+
+#: includes/class-wp-job-manager-alerts-shortcodes.php:55
+msgid "Please name your alert"
+msgstr "Vennligst navngi ditt varsel"
+
+#: includes/class-wp-job-manager-alerts-shortcodes.php:73
+#: includes/class-wp-job-manager-alerts-shortcodes.php:121
+#: includes/class-wp-job-manager-alerts-shortcodes.php:158
+msgid "Invalid Alert"
+msgstr "Ugyldig varsel"
+
+#: includes/class-wp-job-manager-alerts-shortcodes.php:150
+msgid "%s has been %s"
+msgstr "%s har blitt %s"
+
+#: includes/class-wp-job-manager-alerts-shortcodes.php:150 templates/my-alerts.php:84
+msgid "Enabled"
+msgstr "Aktivert"
+
+#: includes/class-wp-job-manager-alerts-shortcodes.php:150 templates/my-alerts.php:84
+msgid "Disabled"
+msgstr "Deaktivert"
+
+#: includes/class-wp-job-manager-alerts-shortcodes.php:164
+msgid "%s has been deleted"
+msgstr "%s har blitt slettet"
+
+#: includes/class-wp-job-manager-alerts-shortcodes.php:181
+msgid "You need to be signed in to manage your alerts."
+msgstr "Du må være innlogget for å gjøre varslingsendringer. "
+
+#: includes/class-wp-job-manager-alerts-shortcodes.php:190
+msgid "Your alerts have been updated"
+msgstr "Dine varsler har blitt oppdatert"
+
+#: includes/class-wp-job-manager-alerts-shortcodes.php:290
+msgid "Jobs matching your \"%s\" alert:"
+msgstr "Forespørsler som stemmer overens med ditt \"%s\" varsel "
+
+#: includes/class-wp-job-manager-alerts-shortcodes.php:306
+msgid "No jobs found"
+msgstr "Ingen forespørsler funnet"
+
+#: includes/updater/class-wpjm-updater.php:269
+msgid "Licence"
+msgstr "Lisens"
+
+#: includes/updater/class-wpjm-updater.php:272
+msgid ""
+"Enter your licence key and email and hit return. A valid key is required for automatic "
+"updates."
+msgstr ""
+
+#: templates/alert-form.php:3 templates/my-alerts.php:6
+msgid "Alert Name"
+msgstr "Navn på varsel"
+
+#: templates/alert-form.php:5
+msgid "Enter a name for your alert"
+msgstr "Navngi ditt varsel"
+
+#: templates/alert-form.php:9
+msgid "Keyword"
+msgstr "Søkeord"
+
+#: templates/alert-form.php:11
+msgid "Optionally add a keyword to match jobs against"
+msgstr "Du kan inkludere søkeord for filtrere forespørsler"
+
+#: templates/alert-form.php:15 templates/my-alerts.php:9
+msgid "Location"
+msgstr "Område"
+
+#: templates/alert-form.php:17
+msgid "Optionally define a location to search against"
+msgstr "Valgfritt, velg område du ønsker vi skal søke gjennom"
+
+#: templates/alert-form.php:22
+msgid "Categories"
+msgstr "Kategorier"
+
+#: templates/alert-form.php:24
+msgid "Any category"
+msgstr "Alle kategorier"
+
+#: templates/alert-form.php:35
+msgid "Job Type"
+msgstr "Kategori"
+
+#: templates/alert-form.php:37
+msgid "Any job type"
+msgstr "Alle forespørsler"
+
+#: templates/alert-form.php:47
+msgid "Email Frequency"
+msgstr "E-post frekvens"
+
+#: templates/alert-form.php:50 templates/my-alerts.php:74
+msgid "Daily"
+msgstr "Daglig"
+
+#: templates/alert-form.php:51 templates/my-alerts.php:77
+msgid "Weekly"
+msgstr "Ukentlig"
+
+#: templates/alert-form.php:52
+msgid "Fortnightly"
+msgstr "Annenhver uke"
+
+#: templates/alert-form.php:59
+msgid "Save alert"
+msgstr "Lagre varsel"
+
+#: templates/content-email_job_listing.php:5
+msgid "Job Type:"
+msgstr "Forespørselstype: "
+
+#: templates/content-email_job_listing.php:7
+msgid "Company:"
+msgstr "Bedrift:"
+
+#: templates/content-email_job_listing.php:9
+msgid "Location:"
+msgstr "Område:"
+
+#: templates/my-alerts.php:2
+msgid "Your job alerts are shown in the table below. Your alerts will be sent to %s."
+msgstr ""
+"Dine varsler for nye oppdrag og forespørsler vises i tabellen nedenfor, og vil bli sendt "
+"til %s. "
+
+#: templates/my-alerts.php:7
+msgid "Date Created"
+msgstr "Dato opprettet"
+
+#: templates/my-alerts.php:8
+msgid "Keywords"
+msgstr "Søkeord"
+
+#: templates/my-alerts.php:10
+msgid "Frequency"
+msgstr "Frekvens"
+
+#: templates/my-alerts.php:11
+msgid "Status"
+msgstr "Status"
+
+#: templates/my-alerts.php:17 wp-job-manager-alerts.php:165
+msgid "Add alert"
+msgstr "Sett opp epostvarsling"
+
+#: templates/my-alerts.php:30
+msgid "Show Results"
+msgstr "Vis resultater"
+
+#: templates/my-alerts.php:34
+msgid "Edit"
+msgstr "Rediger"
+
+#: templates/my-alerts.php:38
+msgid "Enable"
+msgstr "Aktiver"
+
+#: templates/my-alerts.php:38
+msgid "Disable"
+msgstr "Deaktiver"
+
+#: templates/my-alerts.php:42
+msgid "Delete"
+msgstr "Slett"
+
+#: templates/my-alerts.php:80
+msgid "Fornightly"
+msgstr "Annenhver uke"
+
+#: wp-job-manager-alerts.php:79
+msgid "Are you sure you want to delete this alert?"
+msgstr "Er du sikker på at du vil slette dette varselet? "
+
+#: wp-job-manager-alerts.php:112
+msgid "Job Alerts"
+msgstr "Forespørselsvarsler"
+
+#: wp-job-manager-alerts.php:119
+msgid "Alert Email Content"
+msgstr "Varsel epostinnhold"
+
+#: wp-job-manager-alerts.php:120
+msgid ""
+"Enter the content for your email alerts. Leave blank to use the default message. The "
+"following tags can be used to insert data dynamically:"
+msgstr ""
+
+#: wp-job-manager-alerts.php:121
+msgid "The users display name in WP"
+msgstr ""
+
+#: wp-job-manager-alerts.php:122 wp-job-manager-alerts.php:126
+msgid "The name of the alert being sent"
+msgstr ""
+
+#: wp-job-manager-alerts.php:123
+msgid "A sentance explaining if an alert will be stopped automatically"
+msgstr ""
+
+#: wp-job-manager-alerts.php:124
+msgid "The date this alert will next be sent"
+msgstr ""
+
+#: wp-job-manager-alerts.php:125
+msgid "The url to your alerts page"
+msgstr ""
+
+#: wp-job-manager-alerts.php:134
+msgid "Alert Duration"
+msgstr ""
+
+#: wp-job-manager-alerts.php:135
+msgid ""
+"Enter the number of days before alerts are automatically disabled, or leave blank to "
+"disable this feature. By default, alerts will be turned off for a search after 90 days."
+msgstr ""
+
+#: wp-job-manager-alerts.php:141
+msgid "Alert Matches"
+msgstr ""
+
+#: wp-job-manager-alerts.php:142
+msgid "Send alerts with matches only"
+msgstr ""
+
+#: wp-job-manager-alerts.php:143
+msgid ""
+"Only send an alert when jobs are found matching its criteria. When disabled, an alert is "
+"sent regardless."
+msgstr ""
+
+#: wp-job-manager-alerts.php:149
+msgid "Alerts Page Slug"
+msgstr ""
+
+#: wp-job-manager-alerts.php:150
+msgid ""
+"So that the plugin knows where to link users to view their alerts, you must enter the slug "
+"of the page where you have placed the [job_alerts] shortcode."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "WP Job Manager - Job Alerts"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://wpjobmanager.com/add-ons/job-alerts/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Allow users to subscribe to job alerts for their searches. Once registered, users can "
+"access a 'My Alerts' page which you can create with the shortcode [job_alerts]."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Mike Jolley"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://mikejolley.com"
+msgstr ""

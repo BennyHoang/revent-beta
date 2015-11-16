@@ -1,0 +1,1 @@
+[26-Oct-2015 10:38:24 UTC] PHP Fatal error:  Call to undefined function plugin_dir_path() in /home/revenuml/public_html/wp-content/plugins/buddypress-media/index.php on line 25
