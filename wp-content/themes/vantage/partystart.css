@@ -1022,8 +1022,8 @@ ul.job_listings li.job_listing a {
     border-radius: 50%;
     padding-top: 13px;
     border: 2px solid white;
-    top: -82px;
-    left: 80px;
+    top: -120px;
+    left: 89px;
 }
 
 #members-list li .item-avatar img {
@@ -1058,6 +1058,7 @@ ul.job_listings li.job_listing a {
 .brukernavnmeldemsiden a{
     text-decoration: none;
     color:white!important;
+    font-weight:600;
 }
 
 
