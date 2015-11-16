@@ -153,9 +153,8 @@ do_action( 'bp_before_directory_members_list' ); ?>
 						?>
 
 
-
+						<a class="<?php echo$MaxOrdklasse; ?>" href="<?php bp_member_permalink(); ?>"><?php echo $artistNavnPrintes  ?></a>
 					</div>
-					<a class="<?php echo$MaxOrdklasse; ?>" href="<?php bp_member_permalink(); ?>"><?php echo $artistNavnPrintes  ?></a>
 					<div class="item">
 
 						<div class="item-title ">
