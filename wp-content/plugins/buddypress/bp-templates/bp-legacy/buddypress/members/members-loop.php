@@ -81,25 +81,25 @@ do_action( 'bp_before_directory_members_list' ); ?>
 
 			if ( $user->roles[0] == 'subscriber' ){ ?>
 				<li <?php bp_member_class(); ?>>
+					<div class="member-filter"></div>
 					<div class="item-avatar">
 						<a href="<?php bp_member_permalink(); ?>"><?php bp_member_avatar('type=full&width=100%&height=180'); ?></a>
 					</div>
-					<div class="item">
-						<div class="item-title brukernavnmeldemsiden">
-							<?php
-							//regne ut ikon til type artist
+					<div class="item-title brukernavnmeldemsiden">
+						<?php
+						//regne ut ikon til type artist
 
 
-							$djIkon = '<span class="katicon-dj"></span>';
-							$bandIkon = '<span class="katicon-band"></span>';
-							$artistIkon = '<span class="katicon-artist"></span>';
-							$danserIkon = '<span class="katicon-danser"></span>';
-							$komikerIkon = '<span class="katicon-komiker"></span>';
-							$foredragsholderIkon = '<span class="katicon-foredragsholder"></span>';
-							$musikerIkon = '<span class="katicon-musiker"></span>';
+						$djIkon = '<span class="katicon-dj"></span>';
+						$bandIkon = '<span class="katicon-band"></span>';
+						$artistIkon = '<span class="katicon-artist"></span>';
+						$danserIkon = '<span class="katicon-danser"></span>';
+						$komikerIkon = '<span class="katicon-komiker"></span>';
+						$foredragsholderIkon = '<span class="katicon-foredragsholder"></span>';
+						$musikerIkon = '<span class="katicon-musiker"></span>';
 
-							?>
-							<div class="musikertype">
+						?>
+						<div class="musikertype">
 					<span><?php
 						$navarendeKategori = bp_get_member_profile_data('field=Kategori');
 						$sattKategori = '';//$navarendeKategori;
@@ -131,31 +131,34 @@ do_action( 'bp_before_directory_members_list' ); ?>
 						}
 
 						echo $sattKategori; ?></span>
-							</div>
-							<?php
-							$navnArtist = bp_get_member_name();
-							//echo $navnArtist;
-							$antallBokstaverINavn = strlen($navnArtist);
-
-							$artistNavnPrintes = ''.$navnArtist.'';
-							$maxOrd = 17;
-							$maxOrdLengre = 21;
-
-							$MaxOrdklasse = "";
-
-							if($antallBokstaverINavn >= $maxOrd){
-								if($antallBokstaverINavn >= $maxOrdLengre ){
-									$MaxOrdklasse = 'langtNavnMedlemOverTjue';
-								}else{
-									$MaxOrdklasse = 'langtNavnMedlem';
-								}
-							}
-
-							?>
-
-
-							<a class="<?php echo$MaxOrdklasse; ?>" href="<?php bp_member_permalink(); ?>"><?php echo $artistNavnPrintes  ?></a>
 						</div>
+						<button class="utvalg-sendforesporsel" value="send forespørsel"></button>
+						<?php
+						$navnArtist = bp_get_member_name();
+						//echo $navnArtist;
+						$antallBokstaverINavn = strlen($navnArtist);
+
+						$artistNavnPrintes = ''.$navnArtist.'';
+						$maxOrd = 17;
+						$maxOrdLengre = 21;
+
+						$MaxOrdklasse = "";
+
+						if($antallBokstaverINavn >= $maxOrd){
+							if($antallBokstaverINavn >= $maxOrdLengre ){
+								$MaxOrdklasse = 'langtNavnMedlemOverTjue';
+							}else{
+								$MaxOrdklasse = 'langtNavnMedlem';
+							}
+						}
+
+						?>
+
+
+						<a class="<?php echo$MaxOrdklasse; ?>" href="<?php bp_member_permalink(); ?>"><?php echo $artistNavnPrintes  ?></a>
+					</div>
+					<div class="item">
+
 						<div class="item-title ">
 							<a href="<?php bp_member_permalink(); ?>"><?php bp_get_member_type($user_id); ?></a>
 						</div>
