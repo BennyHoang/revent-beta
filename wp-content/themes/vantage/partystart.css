@@ -1021,7 +1021,7 @@ ul.job_listings li.job_listing a {
     z-index:99;
 }
 #members-list li .musikertype {
-z-index:100;
+z-index:100!important;
     width: 40px;
     position: absolute;
     /* background: #303030 none repeat scroll 0% 0%; */
@@ -1073,7 +1073,7 @@ z-index:100;
     text-decoration: none;
     color:white!important;
     font-weight:600;
-    z-index:100;
+    z-index:100 !important;
 }
 
 
