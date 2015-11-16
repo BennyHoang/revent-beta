@@ -138,7 +138,7 @@ do_action( 'bp_before_directory_members_list' ); ?>
 						<?php
 						$profil = "lol";
 						$profilID = $user_id;
-						echo'<a  href="../foresporsel/?direkte=' . $profil . '&did='.$profilID.'"><button class="utvalg-sendforesporsel" >SEND FORESP&Oslash;RSEL</button></a>';
+						echo'<a class="utvalg-sendforesporsel" href="../foresporsel/?direkte=' . $profil . '&did='.$profilID.'">SEND FORESP&Oslash;RSEL</a>';
 
 						?>
 						<?php
