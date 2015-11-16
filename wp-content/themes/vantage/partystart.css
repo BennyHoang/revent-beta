@@ -1441,8 +1441,8 @@ body.members.layout-full #colophon #footer-widgets {
     text-align: center !important;
     text-transform: uppercase !important;
     font-size: 120% !important;
+    font-weight:bold;
     color: #FFF;
-    background: #d8d8d8;
     font-size: 120% !important;
     position: absolute !important;
     bottom: 0px;
