@@ -132,6 +132,7 @@ do_action( 'bp_before_directory_members_list' ); ?>
 
 						echo $sattKategori; ?></span>
 						</div>
+						<button class="utvalg-sendforesporsel"></button>
 						<?php
 						$navnArtist = bp_get_member_name();
 						//echo $navnArtist;
