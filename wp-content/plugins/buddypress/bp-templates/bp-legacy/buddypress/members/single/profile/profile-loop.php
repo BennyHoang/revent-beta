@@ -42,11 +42,7 @@ do_action('bp_before_profile_loop_content'); ?>
             ?>
 
             <div id="profilInformasjonsFelter" class="bp-widget <?php bp_the_profile_group_slug(); ?>">
-                <span class="data"><?php echo 'Her er stjernene '; ?></span>
-                    <?php
-                    prorevs_add_star_loop($profilID);
-
-                    ?>
+          
                 <h4><?php bp_the_profile_group_name(); ?></h4>
 
                 <table class="profile-fields">
