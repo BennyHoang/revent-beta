@@ -1060,8 +1060,8 @@ z-index:100!important;
     text-shadow:none;
 }
 .utvalg-sendforesporsel:hover{
-    backgrond-color:white;
-    color:black;
+    backgrond-color:white!important;
+    color:black!important;
 }
 #buddypress #members-list li:hover .utvalg-sendforesporsel{
     top:-78px;
