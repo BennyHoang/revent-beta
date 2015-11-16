@@ -1012,6 +1012,9 @@ ul.job_listings li.job_listing a {
 #buddypress #members-list li:hover .member-filter{
 opacity: 1;
     z-index:99;
+    -webkit-transition: ease all 300ms;
+    -moz-transition: ease all 300ms;
+    transition: ease all 300ms;
 }
 #members-list li .musikertype {
 z-index:100!important;
