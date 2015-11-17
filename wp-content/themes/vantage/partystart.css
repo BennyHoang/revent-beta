@@ -1038,7 +1038,7 @@ z-index:100!important;
     border-radius: 50%;
     padding-top: 13px;
     border: 2px solid white;
-    top: -120px;
+    top: -140px;
     left: 89px;
     opacity:0;
     -webkit-transition: all 300ms;
@@ -1050,7 +1050,7 @@ z-index:100!important;
     padding:10px;
     opacity:0;
     position:absolute;
-    top: -58px;
+    top: -78px;
     left: 30px;
     -webkit-transition: all 600ms;
     -moz-transition: all 600ms;
@@ -1066,13 +1066,13 @@ z-index:100!important;
     color:black!important;
 }
 #buddypress #members-list li:hover .utvalg-sendforesporsel{
-    top:-78px;
+    top:-98px;
     text-shadow: none;
     text-decoration: none;
     opacity:1;
 }
 #buddypress #members-list li:hover .musikertype{
-    top:-140px;
+    top:-160px;
     opacity:1;
     z-index:100;
 }
