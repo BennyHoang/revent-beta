@@ -170,11 +170,6 @@ do_action( 'bp_before_directory_members_list' ); ?>
 						<div class="item-title ">
 							<a href="<?php bp_member_permalink(); ?>"><?php bp_get_member_type($user_id); ?></a>
 						</div>
-						<div id="stjerner">
-							<?php
-							prorevs_add_star_loop($user_id);
-							?>
-						</div>
 
 
 						<div class="musikerlokasjon">
