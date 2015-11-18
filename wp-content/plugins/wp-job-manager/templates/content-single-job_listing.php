@@ -252,7 +252,7 @@ if(strtolower(trim($jobTittel)) === strtolower(trim($bryllup))){
         } else if ($navarendeBruker == $oppdragsLager) {
             	echo("ditt oppdrag, du kan forh�ndsvise dette oppdraget");
         } else {
-           // echo 'brukeren er ikke artist';
+           //  echo 'brukeren er ikke artist';
             if(!is_user_logged_in()){
                 echo 'ikke autorisert, forvises bort';
                 wp_redirect('//revent.no/');
