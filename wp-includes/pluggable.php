@@ -1698,7 +1698,7 @@ function wp_new_user_notification($user_id, $plaintext_pass = '') {
 	$message .= sprintf(__('Password: %s'), $plaintext_pass) . "\r\n";
 	$message .= wp_login_url() . "\r\n";
 
-	wp_mail($user->user_email, 'Brukernavn og passord på '.$blogname, $message);
+	wp_mail($user->user_email, sprintf(__('[%s] Your username and password'), $blogname), $message);
 
 }
 endif;
