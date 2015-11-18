@@ -569,3 +569,13 @@ function bp_user_activate_field( $signup ) {
 	return $signup;
 }
 add_filter( 'user_register', 'bp_user_activate_field' );
+
+//redirecte bruker til forsiden ved logg ut
+
+function wpse_109694(){
+	$redirect_to = "//revent.no";
+	wp_redirect($redirect_to);
+	exit();
+}
+
+add_action('wp_logout', 'wpse_109694');
