@@ -250,7 +250,7 @@ if(strtolower(trim($jobTittel)) === strtolower(trim($bryllup))){
         if (user_can($navarendeBruker, "administrator")) {
             echo('Som administrator kan du forh&aring;ndsvise denne siden');
         } else if ($navarendeBruker == $oppdragsLager) {
-            	echo("ditt oppdrag, du kan forh�ndsvise dette oppdraget");
+            	echo("ditt oppdrag, du kan forh&oslash;ndsvise dette oppdraget");
         } else {
            //  echo 'brukeren er ikke artist';
             if(!is_user_logged_in()){
