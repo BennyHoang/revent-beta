@@ -84,7 +84,7 @@ do_action( 'bp_before_directory_members_list' ); ?>
 				$user_id = bp_get_member_user_id();
 
 				?>>
-					<div class="member-filter"></div>
+					<a href="<?php bp_member_permalink(); ?>"><div class="member-filter"></div></a>
 					<div class="item-avatar">
 						<a href="<?php bp_member_permalink(); ?>"><?php bp_member_avatar('type=full&width=100%&height=180'); ?></a>
 					</div>
@@ -139,8 +139,11 @@ do_action( 'bp_before_directory_members_list' ); ?>
 						$profil = bp_core_get_username($user_id);
 						$profilID = $user_id;
 						echo'<a class="utvalg-sendforesporsel" href="../foresporsel/?direkte=' . $profil . '&did='.$profilID.'">SEND FORESP&Oslash;RSEL</a>';
-
 						?>
+						<a class="utvalg-sendforesporsel" href="<?php bp_member_permalink(); ?>"><?php echo 'VIS PROFIL' ?></a>
+
+
+
 						<?php
 						$navnArtist = bp_get_member_name();
 						//echo $navnArtist;
