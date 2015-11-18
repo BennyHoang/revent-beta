@@ -235,6 +235,8 @@ if(strtolower(trim($jobTittel)) === strtolower(trim($bryllup))){
     $navarendeBruker = $current_user->ID;
     $oppdragsLager = $post->post_author;
 
+    echo $oppdragsLager;
+
     //echo('sjekk av brukertype, brukerid' . $navarendeBruker . ' dette oppdraget er laget av' . $oppdragsLager);
     if (user_can($navarendeBruker, "subscriber")) {
         //echo 'Brukeren er artist';
@@ -243,7 +245,7 @@ if(strtolower(trim($jobTittel)) === strtolower(trim($bryllup))){
         //Hvis brukeren ikke er artist m� det sjekkes om det er han som lagde oppdraget, eller om det er en admin
         if (user_can($navarendeBruker, "administrator")) {
             echo('Som administrator kan du forh&aring;ndsvise denne siden');
-        } else if ($navarendeBruker == $oppdragsLager) {
+        } else if ($navarendeBruker === $oppdragsLager) {
             	echo("ditt oppdrag, du kan forh�ndsvise dette oppdraget");
         } else {
             echo 'brukeren er ikke artist';
