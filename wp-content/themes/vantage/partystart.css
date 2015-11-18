@@ -1070,7 +1070,7 @@ z-index:100!important;
     background:white!important;
     color:black!important;
 }
-#buddypress #members-list li:hover .utvalg-sendforesporsel{
+#buddypress #members-list li:hover .utvalg-sendforesporsel,#buddypress #members-list li:hover .utvalg-visprofil {
     top:-98px;
     text-shadow: none;
     text-decoration: none;
