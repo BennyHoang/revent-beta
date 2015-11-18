@@ -3,7 +3,7 @@ button#sendforesporseldirektefraprofil{
     box-shadow: none;
     border: none;
     color: white;
-    background-color: #27AE60;
+    background-color: #fe423f;
     text-shadow: none;
     padding: 10px;
 }
@@ -119,7 +119,7 @@ button#sendforesporseldirektefraprofil{
 .main-navigation ul li:hover > a, #search-icon #search-icon-icon:hover{
     background-color:white !important;
     color:black !important;
-    border-bottom: 3px solid #000 !important;
+    border-bottom: 3px solid #fe423f !important;
     text-decoration:none !important;
 }
 
@@ -169,7 +169,7 @@ article.post .entry-header, article.page .entry-header {
 #msform .action-button {
     border:0 !important;
     width: 100px;
-    background: #27AE60 !important;
+    background: #fe423f !important;
     color: white !important;
     border: 0 none;
     border-radius: 1px;
@@ -184,7 +184,7 @@ article.post .entry-header, article.page .entry-header {
     padding: 10px 20px !important;
 }
 #msform .action-button:hover, #msform .action-button:focus,.woocommerce a.button:hover, #job_preview_submit_button:hover  {
-    box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60 !important;
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #fe423f !important;
 }
 #msform .action-submit{
     width:140px;
@@ -260,7 +260,7 @@ article.post .entry-header, article.page .entry-header {
 /*marking active/completed steps green*/
 /*The number of the step and the connector before it = green*/
 #progressbar li.active:before,  #progressbar li.active:after{
-    background: #27AE60;
+    background: #fe423f;
     color: white;
 }
 
