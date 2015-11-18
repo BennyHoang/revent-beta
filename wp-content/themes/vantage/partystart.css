@@ -1740,7 +1740,7 @@ body.members.layout-full #colophon #footer-widgets {
     border:none;
 }
 #members_search_submit{
-    background-color: #27AE60;
+    background-color: #fe423f;
 }
 #members_search_submit i{
     padding-left:30px;
@@ -1774,11 +1774,11 @@ body.members.layout-full #colophon #footer-widgets {
     border-radius:0;
 }
 #member-dir-pag-bottom .page-numbers:hover{
-    background-color:#27AE60 !important;
+    background-color:#fe423f !important;
     color:#FFF;
 }
 #member-dir-pag-bottom .current{
-    background-color:#27AE60 !important;
+    background-color:#fe423f !important;
 }
 /*
 MEDLEMSIDEN FERDIG!!!
