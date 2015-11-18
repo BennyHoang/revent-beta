@@ -119,7 +119,7 @@ button#sendforesporseldirektefraprofil{
 .main-navigation ul li:hover > a, #search-icon #search-icon-icon:hover{
     background-color:white !important;
     color:black !important;
-    border-bottom: 3px solid #000 !important;
+    border-bottom: 3px solid #fe423f !important;
     text-decoration:none !important;
 }
 
