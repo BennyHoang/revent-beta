@@ -288,7 +288,7 @@ article.post .entry-header, article.page .entry-header {
 }
 
 @media(max-width:767px){
-    progressbar li:after{
+    #progressbar li:after{
         left:-67px;
     }
 }
