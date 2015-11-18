@@ -235,7 +235,7 @@ if(strtolower(trim($jobTittel)) === strtolower(trim($bryllup))){
     $navarendeBruker = $current_user->ID;
     $oppdragsLager = $post->post_author;
 
-    echo $oppdragsLager;
+    echo 'artistid'. $oppdragsLager;
 
     //echo('sjekk av brukertype, brukerid' . $navarendeBruker . ' dette oppdraget er laget av' . $oppdragsLager);
     if (user_can($navarendeBruker, "subscriber")) {
