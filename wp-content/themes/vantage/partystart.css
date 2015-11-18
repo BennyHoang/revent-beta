@@ -1434,12 +1434,12 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 .svartknappgjennomsiktigbakgrunn .ow-button-hover span {
-    color: #FE1F1F !important;
+    color: #FFF !important;
     font-weight: bold;
 }
 
 .svartknappgjennomsiktigbakgrunn .ow-button-hover:hover, .job-manager-form fieldset .account-sign-in .button:hover, #submit-job-form input[type="submit"]:hover, .entry-content .job_listing_preview_title .button:hover, .job_listing_preview_title .button:hover {
-    background: #2F3033 !important;
+    background: #FE1F1F !important;
     color: white !important;
 }
 
