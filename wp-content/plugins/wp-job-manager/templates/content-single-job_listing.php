@@ -233,9 +233,10 @@ if(strtolower(trim($jobTittel)) === strtolower(trim($bryllup))){
 
     <?php
     //Ordne s� kun artister, og personen som algde oppdraget skal kunne se oppdraget
-
     $postid = $post->ID;
-    $oppdragsLager = $postid->post_author;
+    $post_author_id = get_post_field( 'post_author', $postid );
+
+    $oppdragsLager = $post_author_id;
     $current_user = wp_get_current_user();
     $navarendeBruker = $current_user->ID;
 
