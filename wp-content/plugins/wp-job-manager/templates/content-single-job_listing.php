@@ -239,7 +239,7 @@ if(strtolower(trim($jobTittel)) === strtolower(trim($bryllup))){
     if (user_can($navarendeBruker, "subscriber")) {
         //echo 'Brukeren er artist';
 
-    } else {
+    }  else {
         //Hvis brukeren ikke er artist m� det sjekkes om det er han som lagde oppdraget, eller om det er en admin
         if (user_can($navarendeBruker, "administrator")) {
             echo('Som administrator kan du forh&aring;ndsvise denne siden');
@@ -247,8 +247,14 @@ if(strtolower(trim($jobTittel)) === strtolower(trim($bryllup))){
             //	echo("ditt oppdrag, du kan forh�ndsvise dette oppdraget");
         } else {
             echo 'brukeren er ikke artist';
-            wp_redirect('//revent.no/');
-            exit;
+            if(is_user_logged_in()){
+                echo 'ikke autorisert, forvises bort';
+                wp_redirect('//revent.no/');
+                exit;
+            }else{
+
+            }
+
         }
     }
 
