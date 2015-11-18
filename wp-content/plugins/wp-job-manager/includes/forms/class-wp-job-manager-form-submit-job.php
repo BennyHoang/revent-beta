@@ -637,10 +637,7 @@ class WP_Job_Manager_Form_Submit_Job extends WP_Job_Manager_Form
                 </div>
                 <div class="job_listing_preview_title">
 
-                    <button type="submit" name="edit_job" class="button" style="padding-right: 10px ! important; padding-left: 10px ! important;">
-                        <i class="fa fa-edit"></i>
-                        Rediger
-                    </button>
+                    <input type="submit" name="edit_job" class="button" style="padding-right: 10px ! important; padding-left: 10px ! important;" value="Rediger">
 
                     <input type="submit" name="continue" id="job_preview_submit_button" class="button"
                            value="<?php echo apply_filters('submit_job_step_preview_submit_text', __('Submit Listing', 'wp-job-manager')); ?>"/>
