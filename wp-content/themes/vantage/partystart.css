@@ -567,7 +567,7 @@ body.home-page.home.page.page-id-2.page-template.page-template-home-panels.page-
     text-decoration: none !important;
     display: inline !important;
     border-radius: 4px !important;
-    -webkit-transition: background-color 1s ease;
+    -webkit-transition: background-color 1s ;
     -moz-transition: background-color 1s ease;
     transition: background-color 1s ease;
 }
@@ -2011,10 +2011,11 @@ bildet på frosiden
     color: white;
     margin: auto !important;
     display: block;
-    font-size: 200% !important;
+    font-size: 300% !important;
     /* margin-bottom: 50%; */
     line-height: 1.4em;
     opacity: 1 !important;
+    font-family: "Source Sans Pro",helvetica,sans-serif !important;
 
 }
 
@@ -2036,14 +2037,17 @@ bildet på frosiden
 .gjennomsiktigbtn {
     width: 200px !important;
     height: 50px !important;
-    border-style: solid !important;
-    border-width: 3px !important;
-    border-color: white !important;
     box-shadow: none !important;
     background: none !important;
     color: white !important;
     text-align: center;
     margin-top: 3% !important;
+    border: 0px none;
+    background: rgba(255, 255, 255, 0.8) none repeat scroll 0% 0% !important;
+    color: #000 !important;
+    -webkit-transition: background-color 1s ease;
+    -moz-transition: background-color 1s ease;
+    transition: background-color 1s ease;
 }
 
 .gjennomsiktigbtn:hover {
