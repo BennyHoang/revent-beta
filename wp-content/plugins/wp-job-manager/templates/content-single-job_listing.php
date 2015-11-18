@@ -249,7 +249,7 @@ if(strtolower(trim($jobTittel)) === strtolower(trim($bryllup))){
             echo 'brukeren er ikke artist';
             if(is_user_logged_in()){
                 echo 'ikke autorisert, forvises bort';
-                wp_redirect('//revent.no/');
+               // wp_redirect('//revent.no/');
                 exit;
             }else{
 
