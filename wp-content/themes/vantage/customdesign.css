@@ -271,5 +271,8 @@ article.post .entry-header, article.page .entry-header {
     #progressbar li{
         width: 30.33%;
     }
+    #progressbar li:after{
+        left:-124px;
+    }
 
 }
