@@ -1434,7 +1434,7 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 }
 
 .svartknappgjennomsiktigbakgrunn .ow-button-hover span {
-    color: #000 !important;
+    color: #FE1F1F !important;
     font-weight: bold;
 }
 
