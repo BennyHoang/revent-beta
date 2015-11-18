@@ -1,7 +1,9 @@
 #direktetilartistIDspan, .field #direkte_artist, .fieldset-direkte_artist{
     display: none!important;
 }
-
+.visalleoppdragDiv .navarendeArtist{
+    display: none;
+}
 
 .musikertype span{
     font-size: 120%!important;

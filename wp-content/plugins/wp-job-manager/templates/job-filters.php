@@ -2,6 +2,7 @@
 
 <div id="artistprivjobber" style="display: none">
 	<ul class="job_listings">
+		<h1 style="margin:50px;padding-bottom:10px;text-align:center;">Private oppdragsforespørsler</h1>
 
 
 	</ul>
