@@ -15,6 +15,11 @@
         background-size:cover;
         -webkit-background-size:cover;
     }
+    
+    #masthead{
+        display: none;
+    }
+
     .btn-registration-wrap{
         margin-top:5%;
     }
