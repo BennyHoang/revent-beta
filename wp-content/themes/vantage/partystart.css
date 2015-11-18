@@ -1426,9 +1426,8 @@ input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focu
 
 /*knapper*/
 .svartknappgjennomsiktigbakgrunn .ow-button-hover, .job-manager-form fieldset .account-sign-in .button, #submit-job-form input[type="submit"], .entry-content .job_listing_preview_title .button, .job_listing_preview_title .button {
-    background: transparent none repeat scroll 0% 0% !important;
-    color: #fe423f !important;
-    text-decoration-color: #000;
+    background: #fe423f !important;
+    color: #ffffff !important;
     border: 0px !important;
     padding-left: 50px !important;
     padding-right: 50px !important;
