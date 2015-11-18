@@ -1066,7 +1066,7 @@ z-index:100!important;
 .utvalg-visprofil{
     left:115px;
 }
-.utvalg-sendforesporsel:hover, .utvalg-visprofil{
+.utvalg-sendforesporsel:hover, .utvalg-visprofil:hover{
     background:white!important;
     color:black!important;
 }
