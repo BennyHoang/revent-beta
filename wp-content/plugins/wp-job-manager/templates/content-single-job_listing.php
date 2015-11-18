@@ -35,6 +35,9 @@
 
 <?php global $post; ?>
 <?php
+
+$post_author_id = get_post_field( 'post_author', $post );
+
 $jobTittel = esc_attr($post->post_title);
 
 //sjekke ut hva slags event dette er og bytte bakgrundsbilde
@@ -233,9 +236,9 @@ if(strtolower(trim($jobTittel)) === strtolower(trim($bryllup))){
     //Ordne s� kun artister, og personen som algde oppdraget skal kunne se oppdraget
     $current_user = wp_get_current_user();
     $navarendeBruker = $current_user->ID;
-    $oppdragsLager = $post->post_author;
+    $oppdragsLager = $post_author_id;
 
-    echo 'artistid'. $oppdragsLager;
+    echo 'artistid '. $oppdragsLager;
 
     //echo('sjekk av brukertype, brukerid' . $navarendeBruker . ' dette oppdraget er laget av' . $oppdragsLager);
     if (user_can($navarendeBruker, "subscriber")) {
