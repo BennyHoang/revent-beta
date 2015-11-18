@@ -36,7 +36,8 @@
 <?php global $post; ?>
 <?php
 
-$oppdragsLager = $post->post_author;
+$postid= $post->ID;
+$oppdragsLager = $postid->post_author;
 
 $jobTittel = esc_attr($post->post_title);
 
