@@ -276,3 +276,19 @@ article.post .entry-header, article.page .entry-header {
     }
 
 }
+
+@media (min-width: 768px) and (max-width: 1024px){
+    #progressbar li{
+        width: 30.33%;
+    }
+    #progressbar li:after{
+        left:-124px;
+    }
+
+}
+
+@media(max-width:767px){
+    progressbar li:after{
+        left:-67px;
+    }
+}
