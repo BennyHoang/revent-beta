@@ -240,7 +240,7 @@ if(strtolower(trim($jobTittel)) === strtolower(trim($bryllup))){
     $current_user = wp_get_current_user();
     $navarendeBruker = $current_user->ID;
 
-    echo 'psot id '. $post->ID . ' navarende bruker: ' .$navarendeBruker;
+    echo 'psot id '. $post->ID . ' navarende bruker: ' .$navarendeBruker . ' post bruker id ' . $post->post_author; 
 
     //echo('sjekk av brukertype, brukerid' . $navarendeBruker . ' dette oppdraget er laget av' . $oppdragsLager);
     if (user_can($navarendeBruker, "subscriber")) {
