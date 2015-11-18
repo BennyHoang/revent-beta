@@ -36,8 +36,6 @@
 <?php global $post; ?>
 <?php
 
-$postid= $post->ID;
-$oppdragsLager = $postid->post_author;
 
 $jobTittel = esc_attr($post->post_title);
 
@@ -235,6 +233,9 @@ if(strtolower(trim($jobTittel)) === strtolower(trim($bryllup))){
 
     <?php
     //Ordne s� kun artister, og personen som algde oppdraget skal kunne se oppdraget
+
+    $postid = $post->ID;
+    $oppdragsLager = $postid->post_author;
     $current_user = wp_get_current_user();
     $navarendeBruker = $current_user->ID;
 
