@@ -15,7 +15,7 @@
         background-size:cover;
         -webkit-background-size:cover;
     }
-    
+
     #masthead{
         display: none;
     }
