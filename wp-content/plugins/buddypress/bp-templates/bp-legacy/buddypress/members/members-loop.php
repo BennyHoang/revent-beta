@@ -139,7 +139,7 @@ do_action( 'bp_before_directory_members_list' ); ?>
 						$profil = bp_core_get_username($user_id);
 						$profilID = $user_id;
 						echo'<a class="utvalg-sendforesporsel" href="../foresporsel/?direkte=' . $profil . '&did='.$profilID.'">SEND FORESP&Oslash;RSEL</a>';
-						echo'<a class="utvalg-sendforesporsel" href="<?php bp_member_permalink(); ?>">VIS PROFIL</a>';
+						echo'<a class="utvalg-sendforesporsel" href=" '.bp_member_permalink() .'">VIS PROFIL</a>';
 
 						?>
 						<?php
