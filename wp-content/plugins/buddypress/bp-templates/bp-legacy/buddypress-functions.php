@@ -1780,12 +1780,12 @@ function bp_change_tabname() {
 
 
 	/*slette visibility fanen*/
-	/*	 $bp->bp_options_nav['post-mention'] = false;
+		 $bp->bp_options_nav['post-mention'] = false;
 
 	 $bp->bp_options_nav['settings']['profile'] = false;
 	 $bp->bp_options_nav['settings']['capabilities'] = false;
 	$bp->bp_options_nav['settings']['notifications'] = false;
-*/
+
 
 
 }
@@ -1801,7 +1801,7 @@ add_action( 'bp_member_header_actions', 'remove_public_message_button' );
 
 
 
-/*
+
 
 define( 'BP_DEFAULT_COMPONENT', 'profile' );
 function bp_remove_nav_tabs() {
@@ -1818,4 +1818,3 @@ add_action( 'bp_init', 'remove_xprofile_links' );
 
 
 
-*/
