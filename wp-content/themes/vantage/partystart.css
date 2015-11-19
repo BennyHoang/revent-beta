@@ -2015,8 +2015,9 @@ bildet på frosiden
     /* margin-bottom: 50%; */
     line-height: 1.4em;
     opacity: 1 !important;
+}
+.metaslider .caption{
     font-family: "Source Sans Pro",helvetica,sans-serif !important;
-
 }
 
 .metaslider img {
