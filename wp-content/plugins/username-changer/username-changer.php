@@ -1,4 +1,4 @@
-<?php
+ja<?php
 /**
  * Plugin Name:     Username Changer
  * Description:     Lets you change usernames. 
@@ -154,6 +154,8 @@ if( !class_exists( 'Username_Changer' ) ) {
          * @return      array $actions The modified user actions
          */
         public function username_changer_link( $actions, $user ) {
+            $actions[] = '<a href="' . add_query_arg( array( 'page' => 'username_changer', 'id' => $user->ID ) ) . '">' . __( 'Change Username', 'username-changer' ) . '</a>';
+
             if( current_user_can( 'edit_users' ) ) {
                 if( !is_multisite() || ( is_multisite() && !is_network_admin() && !user_can( $user->ID, 'manage_network' ) ) || ( is_multisite() && is_network_admin() ) ) {
                     $actions[] = '<a href="' . add_query_arg( array( 'page' => 'username_changer', 'id' => $user->ID ) ) . '">' . __( 'Change Username', 'username-changer' ) . '</a>';
