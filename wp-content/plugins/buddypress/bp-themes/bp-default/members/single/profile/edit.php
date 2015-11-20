@@ -151,6 +151,9 @@ if ( bp_has_profile( 'profile_group_id=' . bp_get_current_profile_group_id() ) )
 	<input type="hidden" name="field_ids" id="field_ids" value="<?php bp_the_profile_group_field_ids(); ?>" />
 
 	<?php wp_nonce_field( 'bp_xprofile_edit' ); ?>
+<?php
+	$actions[] = '<a href="' . add_query_arg( array( 'page' => 'username_changer', 'id' => $user->ID ) ) . '">' . __( 'Change Username', 'username-changer' ) . '</a>';
+?>
 
 </form>
 
