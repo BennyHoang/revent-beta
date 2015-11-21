@@ -64,6 +64,8 @@ get_header(); ?>
             }
         ?>
      <a id="glemtPassordLink" href="http://revent.no/glemt-passord" title="Hittegodskontor for passord">Mistet passordet ditt?</a>
+<?php do_action('facebook_login_button');?>
+
   </section>
 
 
