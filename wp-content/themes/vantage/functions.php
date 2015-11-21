@@ -579,3 +579,16 @@ function wpse_109694(){
 }
 
 add_action('wp_logout', 'wpse_109694');
+
+add_filter( 'nav_menu_link_attributes', 'wpse121123_contact_menu_atts', 10, 3 );
+function wpse121123_contact_menu_atts( $atts, $item, $args )
+{
+	// The ID of the target menu item
+	$menu_target = 1774;
+
+	// inspect $item
+	if ($item->ID == $menu_target) {
+		$atts['data-toggle'] = 'modal';
+	}
+	return $atts;
+}
