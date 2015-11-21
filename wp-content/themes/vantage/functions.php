@@ -590,7 +590,7 @@ function wpse121123_contact_menu_atts( $atts, $item, $args )
 	if ($item->ID == $menu_target) {
 		$atts['data-toggle'] = 'modal';
 		$atts['data-target'] = '#myModal';
-
+ 
 	}
 	return $atts;
 }
