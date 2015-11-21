@@ -243,7 +243,7 @@
                      * @since BuddyPress (1.1.0)
                      */
 
-                    do_action('bp_signup_username_errors'); ?>
+                    //do_action('bp_signup_username_errors'); ?>
 
                     <input type="text" name="signup_username" id="signup_username"
 
