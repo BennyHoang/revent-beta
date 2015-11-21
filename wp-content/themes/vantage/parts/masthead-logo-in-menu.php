@@ -13,14 +13,14 @@ $oppdragIdArray = array();
 ?>
 
 
-<?php 
+<?php
 
 //brukernavn i menyen
 
 if(is_user_logged_in())
 {
-$user=wp_get_current_user();
-$name=$user->user_firstname;
+	$user=wp_get_current_user();
+	$name=$user->user_firstname;
 
 	if($name != ''){
 		$navnstreng = 'Hei, ' .  $name.'.';
@@ -42,7 +42,7 @@ $name=$user->user_firstname;
 <header id="masthead" class="site-header masthead-logo-in-menu" role="banner">
 
 	<?php get_template_part( 'parts/menu', apply_filters( 'vantage_menu_type', siteorigin_setting( 'layout_menu' ) ) ); ?>
-<!--<span id="shiftnav-toggle-main-button" class="shiftnav-toggle shiftnav-toggle-shiftnav-main shiftnav-toggle-burger" data-shiftnav-target="shiftnav-main"><i class="fa fa-bars"></i></span>-->
+	<!--<span id="shiftnav-toggle-main-button" class="shiftnav-toggle shiftnav-toggle-shiftnav-main shiftnav-toggle-burger" data-shiftnav-target="shiftnav-main"><i class="fa fa-bars"></i></span>-->
 	<span id="shiftnav-toggle-main-button" class="shiftnav-toggle shiftnav-toggle-shiftnav-main shiftnav-toggle-burger" data-shiftnav-target="shiftnav-main"><i class="fa fa-bars"></i></span>
 </header><!-- #masthead .site-header -->
 <!-- Inkludere Bootstrap -->
@@ -57,7 +57,7 @@ $name=$user->user_firstname;
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <!-- Modal -->
-<div id="myModal" class="modal" role="dialog">
+<div id="logginnmodal" class="modal" role="dialog">
 	<div class="modal-dialog">
 
 		<!-- Modal content-->
@@ -98,3 +98,6 @@ $name=$user->user_firstname;
 
 	</div>
 </div>
+
+
+
