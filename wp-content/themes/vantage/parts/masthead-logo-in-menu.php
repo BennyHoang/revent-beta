@@ -45,7 +45,6 @@ $name=$user->user_firstname;
 <!--<span id="shiftnav-toggle-main-button" class="shiftnav-toggle shiftnav-toggle-shiftnav-main shiftnav-toggle-burger" data-shiftnav-target="shiftnav-main"><i class="fa fa-bars"></i></span>-->
 	<span id="shiftnav-toggle-main-button" class="shiftnav-toggle shiftnav-toggle-shiftnav-main shiftnav-toggle-burger" data-shiftnav-target="shiftnav-main"><i class="fa fa-bars"></i></span>
 </header><!-- #masthead .site-header -->
-<button type="button" class="btn action-button" data-toggle="modal" data-target="#myModal">LOGG INN</button>
 <!-- Inkludere Bootstrap -->
 
 <!-- Latest compiled and minified CSS -->
