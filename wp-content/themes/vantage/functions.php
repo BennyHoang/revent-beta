@@ -585,7 +585,7 @@ function wpse121123_contact_menu_atts( $atts, $item, $args )
 {
 	// The ID of the target menu item
 	$menu_target = 1774;
-
+ 
 	// inspect $item
 	if ($item->ID == $menu_target) {
 		$atts['data-toggle'] = 'modal';
