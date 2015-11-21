@@ -46,7 +46,17 @@ $name=$user->user_firstname;
 	<span id="shiftnav-toggle-main-button" class="shiftnav-toggle shiftnav-toggle-shiftnav-main shiftnav-toggle-burger" data-shiftnav-target="shiftnav-main"><i class="fa fa-bars"></i></span>
 </header><!-- #masthead .site-header -->
 <button type="button" class="btn action-button" data-toggle="modal" data-target="#myModal">LOGG INN</button>
+<!-- Inkludere Bootstrap -->
 
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+	  xmlns="http://www.w3.org/1999/html">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <!-- Modal -->
 <div id="myModal" class="modal" role="dialog">
 	<div class="modal-dialog">
