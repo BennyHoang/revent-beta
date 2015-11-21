@@ -45,3 +45,47 @@ $name=$user->user_firstname;
 <!--<span id="shiftnav-toggle-main-button" class="shiftnav-toggle shiftnav-toggle-shiftnav-main shiftnav-toggle-burger" data-shiftnav-target="shiftnav-main"><i class="fa fa-bars"></i></span>-->
 	<span id="shiftnav-toggle-main-button" class="shiftnav-toggle shiftnav-toggle-shiftnav-main shiftnav-toggle-burger" data-shiftnav-target="shiftnav-main"><i class="fa fa-bars"></i></span>
 </header><!-- #masthead .site-header -->
+<button type="button" class="btn action-button" data-toggle="modal" data-target="#myModal">LOGG INN</button>
+
+<!-- Modal -->
+<div id="myModal" class="modal" role="dialog">
+	<div class="modal-dialog">
+
+		<!-- Modal content-->
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">&times;</button>
+			</div>
+			<div class="modal-body">
+				<p><section class="aa_loginForm">
+
+						<?php global $user_login;
+						echo'<div id="logginnBeskrivelse"><h1>Vennligst logg inn </h1>';
+						wp_login_form($args);
+						$args = array(
+								'echo'           => true,
+								'form_id'        => 'loginform',
+								'label_username' => __( '' ),
+								'label_password' => __( '' ),
+								'label_remember' => __( 'Remember Me' ),
+								'label_log_in'   => __( 'Log In' ),
+								'id_username'    => 'user_login',
+								'id_password'    => 'user_pass',
+								'id_remember'    => 'rememberme',
+								'id_submit'      => 'wp-submit',
+								'remember'       => true,
+								'value_username' => NULL,
+								'value_remember' => true
+						);
+						?>
+						<a id="glemtPassordLink" href="http://revent.no/glemt-passord" title="Hittegodskontor for passord">Mistet passordet ditt?</a>
+					</section>
+				</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Avbryt</button>
+			</div>
+		</div>
+
+	</div>
+</div>
