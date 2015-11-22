@@ -1,4 +1,4 @@
-<?php
+ja<?php
 /**
  * Plugin Name:     Username Changer
  * Description:     Lets you change usernames. 
