@@ -84,7 +84,7 @@ do_action( 'bp_before_directory_members_list' ); ?>
 				$user_id = bp_get_member_user_id();
 
 				?>>
-					<a href="<?php bp_member_permalink(); ?>"><div class="member-filter"></div></a>
+					<a href="<?php bp_member_permalink(); ?>"><div class="member-filter"></div></a<
 					<div class="item-avatar">
 						<a href="<?php bp_member_permalink(); ?>"><?php bp_member_avatar('type=full&width=100%&height=180'); ?></a>
 					</div>
