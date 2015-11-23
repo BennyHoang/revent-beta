@@ -42,7 +42,7 @@ $dagensDato = date("d/m/Y");
 $randomTallArray = array();
 $randomTall = 0;
 $prisFraRow = 0;
-$innholdITilbud = "";
+//$innholdITilbud = "";
 
 //hente brukerinfo
  global $current_user;
