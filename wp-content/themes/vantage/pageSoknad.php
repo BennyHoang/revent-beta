@@ -209,8 +209,10 @@ $sku = $submitBruker . $submitTid;
                 $ulovligordarray = ["@",".no",".com","www","http"];
                 $antUlvORd = count($ulovligordarray);
 
+                echo 'ant ulovleig ord' . $antUlvORd;
+
                 for ($i = 0;$i < $antUlvORd;$i++){
-                    echo 'i for løkka'; 
+                    echo 'i for løkka';
 
                     $ord = $ulovligordarray[$i];
                     if (strpos($innholdITilbud,$ord) !== false) {
