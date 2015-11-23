@@ -210,6 +210,8 @@ $sku = $submitBruker . $submitTid;
                 $antUlvORd = count($ulovligordarray);
 
                 for ($i = 0;$i < $antUlvORd;$i++){
+                    echo 'i for løkka'; 
+
                     $ord = $ulovligordarray[$i];
                     if (strpos($innholdITilbud,$ord) !== false) {
                         echo "inneholder " . $ord;
