@@ -42,7 +42,7 @@ $dagensDato = date("d/m/Y");
 $randomTallArray = array();
 $randomTall = 0;
 $prisFraRow = 0;
-//$innholdITilbud = "";
+$innholdITilbud = "";
 
 //hente brukerinfo
  global $current_user;
@@ -73,11 +73,11 @@ $dagenstidMinusEttMin = date('Y-m-d H:i:s', $newTime);
 
   		if($unixtime_to_date >= $dagenstidMinusEttMin){
 
-            $innholdITilbud = $row['Informasjon'];
+           // $innholdITilbud = $row['Informasjon'];
 
   			//echo 'dagensdato er mindre en post dato';
   		echo '<div class="dashboardTilbudDiv"><h2>' . $row['Artistnavn'] . ' har lagt inn tilbud til ' . $row['Tittel på arrangement'].'</h2>';
-  		echo '<p>Info:' .  $innholdITilbud . '</p>';
+  		echo '<p>Info:' .  $row['Informasjon'] . '</p>';
   		//echo $row['submit_time'];
   		//echo $row['Submitted Login'];
       echo '<p>Kontaktinfo: <br/>Fult navn: '.$row['Fornavn'] . ' ' .$row['Etternavn'] .
