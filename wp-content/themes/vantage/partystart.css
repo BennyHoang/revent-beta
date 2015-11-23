@@ -1,3 +1,11 @@
+.shiftnav{
+    z-index: 800!important;
+}
+.modal-content{
+    z-index: 999!important;
+}
+
+
 #direktetilartistIDspan, .field #direkte_artist, .fieldset-direkte_artist{
     display: none!important;
 }
