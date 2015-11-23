@@ -41,7 +41,8 @@ $dagensDato = date("d/m/Y");
 //echo $dagensDato;
 $randomTallArray = array();
 $randomTall = 0;
-$prisFraRow = 0; 
+$prisFraRow = 0;
+$innholdITilbud = "";
 
 //hente brukerinfo
  global $current_user;
@@ -71,9 +72,12 @@ $dagenstidMinusEttMin = date('Y-m-d H:i:s', $newTime);
 
 
   		if($unixtime_to_date >= $dagenstidMinusEttMin){
+
+            $innholdITilbud = $row['Informasjon'];
+
   			//echo 'dagensdato er mindre en post dato';
   		echo '<div class="dashboardTilbudDiv"><h2>' . $row['Artistnavn'] . ' har lagt inn tilbud til ' . $row['Tittel på arrangement'].'</h2>';
-  		echo '<p>Info:' .  $row['Informasjon'] . '</p>';
+  		echo '<p>Info:' .  $innholdITilbud . '</p>';
   		//echo $row['submit_time'];
   		//echo $row['Submitted Login'];
       echo '<p>Kontaktinfo: <br/>Fult navn: '.$row['Fornavn'] . ' ' .$row['Etternavn'] .
@@ -197,6 +201,25 @@ $sku = $submitBruker . $submitTid;
     /*Mailscrip ferdig*/
 
     //&echo'cookie satt og mail sent';
+
+                //Vi må sjekke om mailen inneholder ikke lovlige ord
+
+
+                $inneholdUlovlig = false;
+                $ulovligordarray = ["@",".no",".com","www","http"];
+                $antUlvORd = count($ulovligordarray);
+
+                for ($i = 0;$i < $antUlvORd;$i++){
+                    $ord = $ulovligordarray[$i];
+                    if (strpos($innholdITilbud,$ord) !== false) {
+                        echo "inneholder " . $ord;
+                        $inneholdUlovlig = true;
+                    }
+                }
+
+
+
+
 
 }
 
