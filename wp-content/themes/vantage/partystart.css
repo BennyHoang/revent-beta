@@ -1,11 +1,3 @@
-.shiftnav{
-    z-index: 800!important;
-}
-.modal-content{
-    z-index: 999!important;
-}
-
-
 #direktetilartistIDspan, .field #direkte_artist, .fieldset-direkte_artist{
     display: none!important;
 }
@@ -44,8 +36,9 @@
 #basic-details-section #signup_username,#basic-details-section label[for=signup_username]{
     display:none;
 }
-
-
+#msform .field_sjanger,#msform .field_beskrivelse{
+    display: none;
+}
 
 /*grunnet en feil  ved reigering av jobber må jeg ha kategori to ganger. Dette feltet gjør ingen nytte og skjules derfor*/
 #alert_job_type_chosen, label[for=alert_job_type],label[for=direkte_artist] {
@@ -998,7 +991,7 @@ ul.job_listings li.job_listing a {
 }
 .member-filter{
 
-     -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topleft: 5px;
     /* -webkit-border-top-left-radius: 5px;
     /* border-top-left-radius: 5px; */
 
@@ -1034,7 +1027,7 @@ ul.job_listings li.job_listing a {
     transition: ease all 300ms;
 }
 #members-list li .musikertype {
-z-index:100!important;
+    z-index:100!important;
     width: 40px;
     position: absolute;
     /* background: #303030 none repeat scroll 0% 0%; */
@@ -1094,7 +1087,7 @@ z-index:100!important;
 
 #members-list li .item-avatar img {
     width: 100%;
-   /* height: 100%;*/
+    /* height: 100%;*/
 }
 
 /*
@@ -1117,7 +1110,7 @@ z-index:100!important;
      left: 0px; */
     margin: auto !important;
     line-height: 1;
-    color: rgb(48,48,48) !important;
+    color: #fff !important;
     text-decoration: none;
 }
 
@@ -1754,7 +1747,8 @@ body.members.layout-full #colophon #footer-widgets {
     border:none;
 }
 #members_search_submit{
-    background-color: #fe423f;
+    background-color: #FE423F;
+
 }
 #members_search_submit i{
     padding-left:30px;
@@ -2019,13 +2013,16 @@ bildet på frosiden
     color: white;
     margin: auto !important;
     display: block;
-    font-size: 300% !important;
+    font-size: 200% !important;
     /* margin-bottom: 50%; */
     line-height: 1.4em;
     opacity: 1 !important;
+    text-align:left;
 }
 .metaslider .caption{
-    font-family: "Source Sans Pro",helvetica,sans-serif !important;
+    font-family: ff-clan-web-pro-wide,sans-serif !important;
+    font-weight:bold !important;
+    letter-spacing:4px !important;
 }
 
 .metaslider img {
@@ -2057,6 +2054,7 @@ bildet på frosiden
     -webkit-transition: background-color 1s ease;
     -moz-transition: background-color 1s ease;
     transition: background-color 1s ease;
+    text-shadow:none !important;
 }
 
 .gjennomsiktigbtn:hover {
