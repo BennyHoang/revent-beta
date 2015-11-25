@@ -243,7 +243,7 @@
                      * @since BuddyPress (1.1.0)
                      */
 
-                    //do_action('bp_signup_username_errors'); ?>
+                    //  do_action('bp_signup_username_errors'); ?>
 
                     <input type="text" name="signup_username" id="signup_username"
 
@@ -269,7 +269,7 @@
 
                            value="<?php bp_signup_email_value(); ?>" <?php bp_form_field_attributes('email'); ?>/>
 
-                  <label for="phone">Telefon </label>
+                    <label for="phone">Telefon </label>
                     <input type="text" name="phone" id="phone" value="" class="regular-text" />
 
                     <label
@@ -894,6 +894,12 @@ do_action('bp_after_register_page'); ?>
             var field = 'field';
 
             var klikk = 1;
+
+            $(document).keypress(function(e) {
+                if(e.which == 13) {
+                    //Bare slik at ikke formen blir submita ved enterpress
+                }
+            });
 
 
             $("body").on('click', '#next_to_field2', function () {
