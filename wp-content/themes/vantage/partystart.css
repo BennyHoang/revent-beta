@@ -957,6 +957,7 @@ ul.job_listings li.job_listing a {
     text-align: center;
     padding: 5px;
     font-size: 130%;
+    display: none; /*Fjerner all whitespace over widgetten*/
 }
 
 #forsideMedlemmerTittel h3 {
