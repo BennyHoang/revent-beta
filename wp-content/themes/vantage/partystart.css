@@ -2285,6 +2285,10 @@ a.no-popup.rtm-delete-media {
         padding-bottom: 10px;
     }
 
+    #members-list li .musikertype, .utvalg-sendforesporsel,.utvalg-visprofil  {
+        display: none;
+    }
+
     #buddypress div#subnav.item-list-tabs {
         margin-top: 1px;
     }
