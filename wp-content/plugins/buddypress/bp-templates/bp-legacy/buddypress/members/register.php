@@ -10,10 +10,10 @@
 
     }
 
+
     #masthead {
         display: none;
     }
-
 
     .field_kategori .checkbox label input, .field_kan-medbringe-eget-utstyr .checkbox label input {
         -webkit-appearance: radio !important;
