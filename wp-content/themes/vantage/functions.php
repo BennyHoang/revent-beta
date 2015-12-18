@@ -596,3 +596,31 @@ function wpse121123_contact_menu_atts( $atts, $item, $args )
 	}
 	return $atts;
 }
+
+
+/*Kjøre en kode daglig*/
+
+
+add_action( 'wp', 'varsler_setup_schedule' );
+/**
+ * On an early action hook, check if the hook is scheduled - if not, schedule it.
+ */
+function varsler_setup_schedule() {
+	if ( ! wp_next_scheduled( 'varsler_daily_event' ) ) {
+		wp_schedule_event( time(), 'daily', 'varsler_daily_event');
+	}
+}
+
+
+add_action( 'varsler_daily_event', 'varsler_do_this_daily' );
+/**
+ * On the scheduled action hook, run a function.
+ */
+function varsler_do_this_daily() {
+//
+//Sjekk ett urgåtte oppdrag daglig
+//
+//
+	wp_mail("christopher@revent.no", 'Daglig mail', "Bare en test på om mailen kommer daglig");
+	
+}
